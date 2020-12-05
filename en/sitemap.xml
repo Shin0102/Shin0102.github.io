@@ -3,25 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://Shin0102.github.io/en/categories/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://Shin0102.github.io/ko/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Shin0102.github.io/en/categories/"
-                />
-  </url>
-  
-  <url>
     <loc>https://Shin0102.github.io/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://Shin0102.github.io/ko/"
+                href="https://Shin0102.github.io/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -31,11 +17,25 @@
   </url>
   
   <url>
+    <loc>https://Shin0102.github.io/en/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://Shin0102.github.io/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Shin0102.github.io/en/categories/"
+                />
+  </url>
+  
+  <url>
     <loc>https://Shin0102.github.io/en/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://Shin0102.github.io/ko/series/"
+                href="https://Shin0102.github.io/series/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -49,7 +49,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://Shin0102.github.io/ko/tags/"
+                href="https://Shin0102.github.io/tags/"
                 />
     <xhtml:link
                 rel="alternate"
