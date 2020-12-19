@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://Shin0102.github.io/</loc>
-    <lastmod>2020-12-06T00:00:00+00:00</lastmod>
+    <lastmod>2020-12-19T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -18,13 +18,58 @@
   </url>
   
   <url>
+    <loc>https://Shin0102.github.io/tags/aws-eks/</loc>
+    <lastmod>2020-12-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/posts/devops-aws-eks-role/</loc>
+    <lastmod>2020-12-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/categories/</loc>
+    <lastmod>2020-12-19T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Shin0102.github.io/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://Shin0102.github.io/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/tags/cdk/</loc>
+    <lastmod>2020-12-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/categories/devops/</loc>
+    <lastmod>2020-12-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/tags/iam/</loc>
+    <lastmod>2020-12-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://Shin0102.github.io/posts/</loc>
-    <lastmod>2020-12-06T00:00:00+00:00</lastmod>
+    <lastmod>2020-12-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/tags/role/</loc>
+    <lastmod>2020-12-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://Shin0102.github.io/tags/</loc>
-    <lastmod>2020-12-06T00:00:00+00:00</lastmod>
+    <lastmod>2020-12-19T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -38,32 +83,23 @@
   </url>
   
   <url>
+    <loc>https://Shin0102.github.io/categories/etc/</loc>
+    <lastmod>2020-12-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://Shin0102.github.io/tags/zzo-theme/</loc>
     <lastmod>2020-12-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://Shin0102.github.io/posts/shotcodes/</loc>
+    <loc>https://Shin0102.github.io/posts/etc-zzo-theme-shotcodes/</loc>
     <lastmod>2020-12-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://Shin0102.github.io/about/</loc>
     <lastmod>2020-12-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://Shin0102.github.io/categories/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Shin0102.github.io/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://Shin0102.github.io/categories/"
-                />
   </url>
   
   <url>

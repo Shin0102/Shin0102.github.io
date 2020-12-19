@@ -11,10 +11,10 @@
     <description>Recent content in Posts on Alli&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <managingEditor>shinalli0102@gmail.com (alli)</managingEditor>
-    <webMaster>shinalli0102@gmail.com (alli)</webMaster>
+    <managingEditor>shinalli0102@gmail.com (shin alli)</managingEditor>
+    <webMaster>shinalli0102@gmail.com (shin alli)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 06 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 19 Dec 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://Shin0102.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
@@ -23,15 +23,57 @@
 
       
       <item>
+        <title>AWS EKS Role에 대한 고찰</title>
+        <link>https://Shin0102.github.io/posts/devops-aws-eks-role/</link>
+        <pubDate>Sat, 19 Dec 2020 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        <atom:modified>Sat, 19 Dec 2020 00:00:00 +0000</atom:modified>
+        <guid>https://Shin0102.github.io/posts/devops-aws-eks-role/</guid>
+        <description>MSA(microservice architectur)를 위해 CDK(typescript)를 통해 EKS를 구성한 적이 있는데, 이때는 동작에만 집중하다 보니, 자동으로 생성되는 리</description>
+        
+        <dc:creator>shin alli</dc:creator>
+        
+        
+        <media:content url="https://Shin0102.github.iostatic/images/whoami/avatar.png" medium="image"><media:title type="html">meta image</media:title></media:content>
+        
+          
+            
+              <category>aws eks</category>
+            
+          
+            
+              <category>cdk</category>
+            
+          
+            
+              <category>role</category>
+            
+          
+            
+              <category>iam</category>
+            
+          
+        
+        
+          
+            
+              <category>devops</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
         <title>zzo theme shortcodes</title>
-        <link>https://Shin0102.github.io/posts/shotcodes/</link>
+        <link>https://Shin0102.github.io/posts/etc-zzo-theme-shotcodes/</link>
         <pubDate>Sun, 06 Dec 2020 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (alli)</author>
+        <author>shinalli0102@gmail.com (shin alli)</author>
         <atom:modified>Sun, 06 Dec 2020 00:00:00 +0000</atom:modified>
-        <guid>https://Shin0102.github.io/posts/shotcodes/</guid>
+        <guid>https://Shin0102.github.io/posts/etc-zzo-theme-shotcodes/</guid>
         <description>this is a text this is a text this is a text this is a text   Expand me  Some Markdown Contents   Image4: Image description   success  color Some contents  Some markdown contents Windows MacOS Ubuntu  Windows section 1  console.log(&amp;#39;Hello World!&amp;#39;);     MacOS section Hello world!  Ubuntu section Great!    &#39;use strict&#39;; var containerId = JSON.</description>
         
-        <dc:creator>alli</dc:creator>
+        <dc:creator>shin alli</dc:creator>
         
         
         <media:content url="https://Shin0102.github.iostatic/images/whoami/avatar.png" medium="image"><media:title type="html">meta image</media:title></media:content>
@@ -44,6 +86,8 @@
         
         
           
+            
+              <category>etc</category>
             
           
         

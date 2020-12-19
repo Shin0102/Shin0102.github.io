@@ -11,10 +11,10 @@
     <description>Recent content in Tags on Alli&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <managingEditor>shinalli0102@gmail.com (alli)</managingEditor>
-    <webMaster>shinalli0102@gmail.com (alli)</webMaster>
+    <managingEditor>shinalli0102@gmail.com (shin alli)</managingEditor>
+    <webMaster>shinalli0102@gmail.com (shin alli)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 06 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 19 Dec 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://Shin0102.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -23,15 +23,87 @@
 
       
       <item>
+        <title>aws eks</title>
+        <link>https://Shin0102.github.io/tags/aws-eks/</link>
+        <pubDate>Sat, 19 Dec 2020 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        
+        <guid>https://Shin0102.github.io/tags/aws-eks/</guid>
+        <description></description>
+        
+        <dc:creator>shin alli</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>cdk</title>
+        <link>https://Shin0102.github.io/tags/cdk/</link>
+        <pubDate>Sat, 19 Dec 2020 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        
+        <guid>https://Shin0102.github.io/tags/cdk/</guid>
+        <description></description>
+        
+        <dc:creator>shin alli</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>iam</title>
+        <link>https://Shin0102.github.io/tags/iam/</link>
+        <pubDate>Sat, 19 Dec 2020 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        
+        <guid>https://Shin0102.github.io/tags/iam/</guid>
+        <description></description>
+        
+        <dc:creator>shin alli</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>role</title>
+        <link>https://Shin0102.github.io/tags/role/</link>
+        <pubDate>Sat, 19 Dec 2020 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        
+        <guid>https://Shin0102.github.io/tags/role/</guid>
+        <description></description>
+        
+        <dc:creator>shin alli</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
         <title>zzo theme</title>
         <link>https://Shin0102.github.io/tags/zzo-theme/</link>
         <pubDate>Sun, 06 Dec 2020 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (alli)</author>
+        <author>shinalli0102@gmail.com (shin alli)</author>
         
         <guid>https://Shin0102.github.io/tags/zzo-theme/</guid>
         <description></description>
         
-        <dc:creator>alli</dc:creator>
+        <dc:creator>shin alli</dc:creator>
         
         
         

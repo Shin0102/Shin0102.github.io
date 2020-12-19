@@ -11,8 +11,8 @@
     <description>Recent content in zzo theme on Alli&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <managingEditor>shinalli0102@gmail.com (alli)</managingEditor>
-    <webMaster>shinalli0102@gmail.com (alli)</webMaster>
+    <managingEditor>shinalli0102@gmail.com (shin alli)</managingEditor>
+    <webMaster>shinalli0102@gmail.com (shin alli)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sun, 06 Dec 2020 00:00:00 +0000</lastBuildDate>
     
@@ -24,14 +24,14 @@
       
       <item>
         <title>zzo theme shortcodes</title>
-        <link>https://Shin0102.github.io/posts/shotcodes/</link>
+        <link>https://Shin0102.github.io/posts/etc-zzo-theme-shotcodes/</link>
         <pubDate>Sun, 06 Dec 2020 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (alli)</author>
+        <author>shinalli0102@gmail.com (shin alli)</author>
         <atom:modified>Sun, 06 Dec 2020 00:00:00 +0000</atom:modified>
-        <guid>https://Shin0102.github.io/posts/shotcodes/</guid>
+        <guid>https://Shin0102.github.io/posts/etc-zzo-theme-shotcodes/</guid>
         <description>this is a text this is a text this is a text this is a text   Expand me  Some Markdown Contents   Image4: Image description   success  color Some contents  Some markdown contents Windows MacOS Ubuntu  Windows section 1  console.log(&amp;#39;Hello World!&amp;#39;);     MacOS section Hello world!  Ubuntu section Great!    &#39;use strict&#39;; var containerId = JSON.</description>
         
-        <dc:creator>alli</dc:creator>
+        <dc:creator>shin alli</dc:creator>
         
         
         <media:content url="https://Shin0102.github.iostatic/images/whoami/avatar.png" medium="image"><media:title type="html">meta image</media:title></media:content>
@@ -44,6 +44,8 @@
         
         
           
+            
+              <category>etc</category>
             
           
         
