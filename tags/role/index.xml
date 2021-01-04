@@ -32,9 +32,9 @@
         <description>MSA(microservice architectur)를 위해 CDK(typescript)를 통해 EKS를 구성한 적이 있는데, 이때는 동작에만 집중하다 보니, 자동으로 생성되는 리</description>
         
         <dc:creator>shin alli</dc:creator>
+        <media:content url="https://Shin0102.github.ioimages/aws-eks.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
-        
-        <media:content url="https://Shin0102.github.iostatic/images/whoami/avatar.png" medium="image"><media:title type="html">meta image</media:title></media:content>
+        <media:content url="https://Shin0102.github.iostatic/images/aws-eks.png" medium="image"><media:title type="html">meta image</media:title></media:content>
         
           
             

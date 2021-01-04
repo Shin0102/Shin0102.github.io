@@ -14,13 +14,51 @@
     <managingEditor>shinalli0102@gmail.com (shin alli)</managingEditor>
     <webMaster>shinalli0102@gmail.com (shin alli)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sat, 19 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 30 Dec 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://Shin0102.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>github action으로 Kubernetes 배포 자동화</title>
+        <link>https://Shin0102.github.io/posts/devops-github-action/</link>
+        <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        <atom:modified>Wed, 30 Dec 2020 00:00:00 +0000</atom:modified>
+        <guid>https://Shin0102.github.io/posts/devops-github-action/</guid>
+        <description>들어가며 작년부터 회사의 거대한 레거시 시스템을 Python 기반의 API 서버로 조금씩 포팅하고 있다. 한번에 모두 포팅하기란 불가능하기에 MSA를 기반으로 여러 기능들로 나</description>
+        
+        <dc:creator>shin alli</dc:creator>
+        <media:content url="https://Shin0102.github.ioimages/github-action.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        <media:content url="https://Shin0102.github.iostatic/images/github-action.png" medium="image"><media:title type="html">meta image</media:title></media:content>
+        
+          
+            
+              <category>github action</category>
+            
+          
+            
+              <category>Kubernetes</category>
+            
+          
+            
+              <category>argocd</category>
+            
+          
+        
+        
+          
+            
+              <category>devops</category>
+            
+          
+        
+        
+      </item>
       
       <item>
         <title>AWS EKS Role에 대한 고찰</title>
@@ -32,9 +70,9 @@
         <description>MSA(microservice architectur)를 위해 CDK(typescript)를 통해 EKS를 구성한 적이 있는데, 이때는 동작에만 집중하다 보니, 자동으로 생성되는 리</description>
         
         <dc:creator>shin alli</dc:creator>
+        <media:content url="https://Shin0102.github.ioimages/aws-eks.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
-        
-        <media:content url="https://Shin0102.github.iostatic/images/whoami/avatar.png" medium="image"><media:title type="html">meta image</media:title></media:content>
+        <media:content url="https://Shin0102.github.iostatic/images/aws-eks.png" medium="image"><media:title type="html">meta image</media:title></media:content>
         
           
             

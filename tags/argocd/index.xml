@@ -6,9 +6,9 @@
   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>devops on Alli&#39;s blog</title>
-    <link>https://Shin0102.github.io/categories/devops/</link>
-    <description>Recent content in devops on Alli&#39;s blog</description>
+    <title>argocd on Alli&#39;s blog</title>
+    <link>https://Shin0102.github.io/tags/argocd/</link>
+    <description>Recent content in argocd on Alli&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
     <managingEditor>shinalli0102@gmail.com (shin alli)</managingEditor>
@@ -16,7 +16,7 @@
     <copyright>©{year}, All Rights Reserved</copyright>
     <lastBuildDate>Wed, 30 Dec 2020 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://Shin0102.github.io/categories/devops/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://Shin0102.github.io/tags/argocd/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -47,48 +47,6 @@
           
             
               <category>argocd</category>
-            
-          
-        
-        
-          
-            
-              <category>devops</category>
-            
-          
-        
-        
-      </item>
-      
-      <item>
-        <title>AWS EKS Role에 대한 고찰</title>
-        <link>https://Shin0102.github.io/posts/devops-aws-eks-role/</link>
-        <pubDate>Sat, 19 Dec 2020 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        <atom:modified>Sat, 19 Dec 2020 00:00:00 +0000</atom:modified>
-        <guid>https://Shin0102.github.io/posts/devops-aws-eks-role/</guid>
-        <description>MSA(microservice architectur)를 위해 CDK(typescript)를 통해 EKS를 구성한 적이 있는데, 이때는 동작에만 집중하다 보니, 자동으로 생성되는 리</description>
-        
-        <dc:creator>shin alli</dc:creator>
-        <media:content url="https://Shin0102.github.ioimages/aws-eks.png" medium="image"><media:title type="html">featured image</media:title></media:content>
-        
-        <media:content url="https://Shin0102.github.iostatic/images/aws-eks.png" medium="image"><media:title type="html">meta image</media:title></media:content>
-        
-          
-            
-              <category>aws eks</category>
-            
-          
-            
-              <category>cdk</category>
-            
-          
-            
-              <category>role</category>
-            
-          
-            
-              <category>iam</category>
             
           
         
