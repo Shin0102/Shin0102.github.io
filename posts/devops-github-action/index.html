@@ -1656,7 +1656,7 @@
 <div class="single__infos">
   <time class="single__info" title="작성일">📅&nbsp;2020년 12월 30일 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="읽는 시간"> ☕&nbsp;6&nbsp;min read </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="읽는 시간"> ☕&nbsp;5&nbsp;min read </span>
   
   <span class="single__info">
     
@@ -1821,11 +1821,15 @@
 </span><span class="lnt">83
 </span><span class="lnt">84
 </span><span class="lnt">85
+</span><span class="lnt">86
+</span><span class="lnt">87
+</span><span class="lnt">88
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-yml" data-lang="yml"><span class="nt">on</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span><span class="nt">push</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span><span class="nt">branches</span><span class="p">:</span><span class="w">   </span><span class="c"># feature branch에 push 될때 github action 실행</span><span class="w">
+</span><span class="w">    </span><span class="nt">branches</span><span class="p">:</span><span class="w">   </span><span class="c"># master, feature branch에 push 될때 github action 실행</span><span class="w">
+</span><span class="w">      </span>- <span class="l">master</span><span class="w">
 </span><span class="w">      </span>- <span class="l">feature</span><span class="w">
 </span><span class="w">
 </span><span class="w"></span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Docker Image build &amp; k8s deployment.yaml update  </span><span class="w"> </span><span class="c"># github action 이름</span><span class="w">
@@ -1840,6 +1844,7 @@
 </span><span class="w">      </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/checkout@v2</span><span class="w">
 </span><span class="w">      </span><span class="nt">with</span><span class="p">:</span><span class="w">
 </span><span class="w">        </span><span class="nt">fetch-depth</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">
 </span><span class="w">    </span><span class="c">#</span><span class="w">
 </span><span class="w">    </span><span class="c"># Push app image to ECR</span><span class="w">
 </span><span class="w">    </span><span class="c"># build 한 Docker Image를 AWS ECR에 push하기 위해 ECR Login 선행</span><span class="w">
@@ -1859,7 +1864,7 @@
 </span><span class="w">      </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l">build-image</span><span class="w">
 </span><span class="w">      </span><span class="nt">env</span><span class="p">:</span><span class="w">
 </span><span class="w">        </span><span class="nt">ECR_REGISTRY</span><span class="p">:</span><span class="w"> </span><span class="l">${{ steps.login-ecr.outputs.registry }}</span><span class="w">
-</span><span class="w">        </span><span class="nt">ECR_REPOSITORY</span><span class="p">:</span><span class="w"> </span><span class="l">repo_name      </span><span class="w"> </span><span class="c"># 저장할 ECR repo 이름을 넣어야 됨!</span><span class="w">
+</span><span class="w">        </span><span class="nt">ECR_REPOSITORY</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.ECR_REPOSITORY }}</span><span class="w"> </span><span class="c"># github secret에 정의된 ECR_REPOSITORY NAME</span><span class="w">
 </span><span class="w">        </span><span class="nt">IMAGE_TAG</span><span class="p">:</span><span class="w"> </span><span class="l">${{ github.sha }}   </span><span class="w"> </span><span class="c"># 이미지 태그는 github sha 이용</span><span class="w">
 </span><span class="w">      </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
 </span><span class="sd">        # Build a docker container and
@@ -1868,6 +1873,7 @@
 </span><span class="sd">        docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
 </span><span class="sd">        docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
 </span><span class="sd">        echo &#34;::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG&#34;</span><span class="w">        
+</span><span class="w">
 </span><span class="w">    </span><span class="c">#</span><span class="w">
 </span><span class="w">    </span><span class="c"># Update Image tag to delployment.yaml</span><span class="w">
 </span><span class="w">    </span><span class="c"># 위에서 build한 이미지 태그를 업데이트</span><span class="w">
@@ -1881,7 +1887,7 @@
 </span><span class="sd">        git config --global user.name &#34;$USER_NAME&#34;</span><span class="w">        
 </span><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Install git ssh key</span><span class="w"> </span><span class="c"># git push 하기 위한 ssh key 세팅</span><span class="w">
 </span><span class="w">      </span><span class="nt">env</span><span class="p">:</span><span class="w">
-</span><span class="w">        </span><span class="nt">GIT_SSH_KEY</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.GIT_SSH_KEY }}</span><span class="w"> </span><span class="c"># github secret에 정의된 GIT_SSH_KEY</span><span class="w">
+</span><span class="w">        </span><span class="nt">GIT_SSH_KEY</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.GIT_SSH_KEY }} </span><span class="w">
 </span><span class="w">      </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
 </span><span class="sd">        mkdir -p ~/.ssh/
 </span><span class="sd">        echo &#34;$GIT_SSH_KEY&#34; &gt; ~/.ssh/id_rsa
@@ -1900,17 +1906,17 @@
 </span><span class="w">    </span><span class="c"># 이미지 태그 업데이트는 sed 명령어와 regex를 이용하여 업데이트.</span><span class="w">
 </span><span class="w">    </span><span class="c"># k8s resoure 경로는 k8s-dev/*.yaml</span><span class="w">
 </span><span class="w">    </span><span class="c">#</span><span class="w">
-</span><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Update feature delployment.yaml </span><span class="w">
+</span><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Update dev delployment.yaml </span><span class="w">
 </span><span class="w">      </span><span class="nt">if</span><span class="p">:</span><span class="w"> </span><span class="l">${{ steps.extract_branch.outputs.branch }} == &#39;feature&#39;  </span><span class="w"> </span><span class="c"># feature branch일 경우 dev 배포</span><span class="w">
 </span><span class="w">      </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
 </span><span class="sd">        git reset --soft HEAD~1
-</span><span class="sd">        sed -i -e &#39;s@/repo_name:.*@/repo_name:${{ github.sha }}@g&#39; k8s-dev/deployment.yaml 
+</span><span class="sd">        sed -i -e &#39;s@${{ steps.login-ecr.outputs.registry }}/${{ secrets.ECR_REPOSITORY }}:.*@${{ steps.build-image.outputs.image }}@g&#39; k8s-dev/deployment.yaml 
 </span><span class="sd">        git add .
 </span><span class="sd">        git commit -m &#34;${{ github.event.head_commit.message }}&#34;
 </span><span class="sd">        git push -f --set-upstream origin ${{ steps.extract_branch.outputs.branch }}</span><span class="w">        
 </span></code></pre></td></tr></table>
 </div>
-</div><p>   feature branch에 push 될때 dev서버에 업데이트 하기위한 github action이다. 구조를 보면 <strong>트리거 / build 환경 / 실제 수행할 step</strong>들이 정의되어 있다. 자세한 설명은 주석으로 추가하였다. AWS ACCESS KEY와 Github ssh key는 Github secret에 설정한 값을 가져오도록 하였다. Github secret 설정과 37, 82 line의 repo name만 변경하면 어느 프로젝트이든 손 쉽게 설정할 수 있을 것 같다.</p>
+</div><p>   feature branch에 push 될때 dev서버에 업데이트 하기위한 github action이다. 구조를 보면 <strong>트리거 / build 환경 / 실제 수행할 step</strong>들이 정의되어 있다. 자세한 설명은 주석으로 추가하였다. AWS ACCESS KEY와 Github ssh key, ECR repo 이름은 Github secrets에 설정한 값을 가져오도록 하였다. Github secrets만 세팅하면 어느 프로젝트이든 손 쉽게 설정할 수 있을 것 같다.</p>
 <h2 id="aws-codepipeline과-비교">AWS CodePipeline과 비교</h2>
 <hr />
 <p>   일단 기존의 사용하던 codepipe line과 비교해보면 사용법이 굉장히 쉬웠다. AWS Codepipeline도 iac tool 을 이용해서 <strong>쉽게 세팅</strong>할 수 있지만, 초기 세팅이 쉽지는 않았다. 그리고 github action이 좋았던 것이 <strong>브랜치별로 pipeline을 구성할 필요가 없다</strong>는 것이 굉장히 편리했다. step에서 조건문을 이용하면 branch 별로 action을 제어할 수 있다. 마지막으로 빌드 시간에서 생각보다 많은 차이가 났다. 기존 CodePipeline을 사용했을때는 5~6분정도 소요 되었는데 github action은 <strong>절반도 안되는 시간이(2분 정도) 소요</strong>되었다.<br />
