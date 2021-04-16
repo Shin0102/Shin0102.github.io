@@ -116,18 +116,5 @@
                 hreflang="ko"
                 href="https://Shin0102.github.io/series/"
                 />
-  </url><url>
-    <loc>https://Shin0102.github.io/true/</loc>
-    <changefreq>weekly</changefreq>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Shin0102.github.io/en/true/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://Shin0102.github.io/true/"
-                />
   </url>
 </urlset>
