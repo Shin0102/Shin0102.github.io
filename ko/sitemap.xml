@@ -1,26 +1,270 @@
-
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://Shin0102.github.io/</loc>
+    <lastmod>2020-12-30T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Shin0102.github.io/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://Shin0102.github.io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="x-default"
+                href="https://Shin0102.github.io/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/tags/argocd/</loc>
+    <lastmod>2020-12-30T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="x-default"
+                href="https://Shin0102.github.io/tags/argocd/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/categories/</loc>
+    <lastmod>2020-12-30T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Shin0102.github.io/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://Shin0102.github.io/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="x-default"
+                href="https://Shin0102.github.io/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/categories/devops/</loc>
+    <lastmod>2020-12-30T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="x-default"
+                href="https://Shin0102.github.io/categories/devops/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/tags/github-action/</loc>
+    <lastmod>2020-12-30T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="x-default"
+                href="https://Shin0102.github.io/tags/github-action/"
+                />
+  </url>
+  
   <url>
     <loc>https://Shin0102.github.io/posts/devops-github-action/</loc>
     <lastmod>2020-12-30T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="x-default"
+                href="https://Shin0102.github.io/posts/devops-github-action/"
+                />
   </url>
-
+  
+  <url>
+    <loc>https://Shin0102.github.io/tags/kubernetes/</loc>
+    <lastmod>2020-12-30T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="x-default"
+                href="https://Shin0102.github.io/tags/kubernetes/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/posts/</loc>
+    <lastmod>2020-12-30T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="x-default"
+                href="https://Shin0102.github.io/posts/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/tags/</loc>
+    <lastmod>2020-12-30T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Shin0102.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://Shin0102.github.io/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="x-default"
+                href="https://Shin0102.github.io/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/tags/aws-eks/</loc>
+    <lastmod>2020-12-19T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="x-default"
+                href="https://Shin0102.github.io/tags/aws-eks/"
+                />
+  </url>
+  
   <url>
     <loc>https://Shin0102.github.io/posts/devops-aws-eks-role/</loc>
     <lastmod>2020-12-19T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="x-default"
+                href="https://Shin0102.github.io/posts/devops-aws-eks-role/"
+                />
   </url>
-
+  
+  <url>
+    <loc>https://Shin0102.github.io/tags/cdk/</loc>
+    <lastmod>2020-12-19T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="x-default"
+                href="https://Shin0102.github.io/tags/cdk/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/tags/iam/</loc>
+    <lastmod>2020-12-19T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="x-default"
+                href="https://Shin0102.github.io/tags/iam/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/tags/role/</loc>
+    <lastmod>2020-12-19T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="x-default"
+                href="https://Shin0102.github.io/tags/role/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/categories/etc/</loc>
+    <lastmod>2020-12-06T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="x-default"
+                href="https://Shin0102.github.io/categories/etc/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/tags/zzo-theme/</loc>
+    <lastmod>2020-12-06T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="x-default"
+                href="https://Shin0102.github.io/tags/zzo-theme/"
+                />
+  </url>
+  
   <url>
     <loc>https://Shin0102.github.io/posts/etc-zzo-theme-shotcodes/</loc>
     <lastmod>2020-12-06T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="x-default"
+                href="https://Shin0102.github.io/posts/etc-zzo-theme-shotcodes/"
+                />
   </url>
-
+  
   <url>
     <loc>https://Shin0102.github.io/about/</loc>
     <lastmod>2020-12-05T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="x-default"
+                href="https://Shin0102.github.io/about/"
+                />
   </url>
-
+  
+  <url>
+    <loc>https://Shin0102.github.io/series/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Shin0102.github.io/en/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://Shin0102.github.io/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="x-default"
+                href="https://Shin0102.github.io/series/"
+                />
+  </url>
+  
 </urlset>
