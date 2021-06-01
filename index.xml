@@ -172,7 +172,12 @@
         <author>shinalli0102@gmail.com (shin alli)</author>
         <atom:modified>Sat, 05 Dec 2020 00:00:00 +0000</atom:modified>
         <guid>https://Shin0102.github.io/about/</guid>
-        <description>  </description>
+        <description>Experience Python(Django, FastAPI, Flask) Backend Developer
+AWS, EKS, Serverless Devops
+Migration legacy services to microservices
+Interst Full stack Developer(Learning React)
+Deep dive devops
+Golang</description>
         
         <dc:creator>shin alli</dc:creator>
         <media:content url="https://Shin0102.github.io/images/whoami/avatar.png" medium="image"><media:title type="html">featured image</media:title></media:content>
