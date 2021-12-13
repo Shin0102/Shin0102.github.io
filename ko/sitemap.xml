@@ -173,6 +173,12 @@
   </url>
   
   <url>
+    <loc>https://Shin0102.github.io/posts/indie-developer/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://Shin0102.github.io/series/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
