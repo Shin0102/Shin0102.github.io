@@ -14,13 +14,31 @@
     <managingEditor>shinalli0102@gmail.com (shin alli)</managingEditor>
     <webMaster>shinalli0102@gmail.com (shin alli)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 01 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Dec 2021 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://Shin0102.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>experience</title>
+        <link>https://Shin0102.github.io/categories/experience/</link>
+        <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        
+        <guid>https://Shin0102.github.io/categories/experience/</guid>
+        <description></description>
+        
+        <dc:creator>shin alli</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>devops</title>

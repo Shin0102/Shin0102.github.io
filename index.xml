@@ -14,7 +14,7 @@
     <managingEditor>shinalli0102@gmail.com (shin alli)</managingEditor>
     <webMaster>shinalli0102@gmail.com (shin alli)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 01 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Dec 2021 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://Shin0102.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -24,6 +24,36 @@
       
       
 
+      
+      <item>
+        <title>1인 개발로 서비스 런칭하며...</title>
+        <link>https://Shin0102.github.io/posts/indie-developer/</link>
+        <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        <atom:modified>Mon, 13 Dec 2021 00:00:00 +0000</atom:modified>
+        <guid>https://Shin0102.github.io/posts/indie-developer/</guid>
+        <description>어쩌다? 3년 넘게 다니던 회사를 그만두게 되고, 타이밍 좋게? 지인소개로 새로 런칭하는 서비스(재능기부 플랫폼)의 백엔드 개발에 참여하게 되었다. 레거시 없이</description>
+        
+        <dc:creator>shin alli</dc:creator>
+        <media:content url="https://Shin0102.github.ioimages/indie-developer.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        <media:content url="https://Shin0102.github.iostatic/images/indie-developer.png" medium="image"><media:title type="html">meta image</media:title></media:content>
+        
+          
+            
+              <category>1인 개발, AWS activate, 풀스택</category>
+            
+          
+        
+        
+          
+            
+              <category>experience</category>
+            
+          
+        
+        
+      </item>
       
       <item>
         <title>MSA 설계시 고려해야될 점과 Pattern</title>
@@ -181,24 +211,6 @@ Golang</description>
         
         <dc:creator>shin alli</dc:creator>
         <media:content url="https://Shin0102.github.io/images/whoami/avatar.png" medium="image"><media:title type="html">featured image</media:title></media:content>
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title></title>
-        <link>https://Shin0102.github.io/posts/indie-developer/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/posts/indie-developer/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
         
         
         
