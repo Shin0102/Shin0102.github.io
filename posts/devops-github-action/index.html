@@ -18,9 +18,9 @@
 
 <script defer src="/js/lazysizes.min.fb649fcae62177dfe63e67081ddceb830b5ce1f05a4184e9bbb7d87ac4b8f4e5.js"></script>
 
-<script defer src="/js/helper/getParents.min.ccd45f158c1b17849307ba913a72beac239c410f2b6e648496a79842da84e55b.js"></script>
+<script defer src="/js/helper/getParents.min.cd44056d552c69703dced61ae60f99166a0ddf44be93d6aa5d5127d98bf98984.js"></script>
 
-<script defer src="/js/helper/fadeinout.min.1d13d3e810c3940e80cbba6216a1c76fbf42b5431fc83537ea6997863802362b.js"></script>
+<script defer src="/js/helper/fadeinout.min.1551b6dbdacc77e412a26a29d3b84d2dcdc8f05c3b617433a475dc53c8872bdb.js"></script>
 
 <script defer src="/js/helper/closest.min.js"></script>
   
@@ -1358,7 +1358,7 @@
     <meta property="twitter:description" content="">
   
 
-<meta name="generator" content="Hugo 0.81.0" />
+<meta name="generator" content="Hugo 0.96.0" />
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -1441,7 +1441,7 @@
     
 </head>
 
-<body id="root" class="theme__light">
+<body id="root" class="theme__dark">
     <script>
         var localTheme = localStorage.getItem('theme');
         if (localTheme) {
@@ -1764,7 +1764,7 @@
 <h3 id="예제">예제</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -1859,100 +1859,100 @@
 </span><span class="lnt">93
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-yml" data-lang="yml"><span class="w">
-</span><span class="w"></span><span class="nt">on</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="nt">push</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span><span class="nt">branches</span><span class="p">:</span><span class="w"> 
-</span><span class="w">      </span>- <span class="l">master</span><span class="w">
-</span><span class="w">      </span>- <span class="l">feature</span><span class="w">
-</span><span class="w">
-</span><span class="w"></span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Docker Image build &amp; k8s resources.yaml update</span><span class="w">
-</span><span class="w">
-</span><span class="w"></span><span class="nt">jobs</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="nt">deploy</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Deploy</span><span class="w">
-</span><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l">ubuntu-latest</span><span class="w">
-</span><span class="w">
-</span><span class="w">    </span><span class="nt">steps</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Checkout</span><span class="w">
-</span><span class="w">      </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/checkout@v2</span><span class="w">
-</span><span class="w">    
-</span><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Set Dev env variables</span><span class="w">
-</span><span class="w">      </span><span class="nt">if</span><span class="p">:</span><span class="w"> </span><span class="l">endsWith(github.ref, &#39;/feature&#39;)</span><span class="w">
-</span><span class="w">      </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
-</span><span class="sd">        echo &#34;Feature branch&#34;
-</span><span class="sd">        echo &#34;ENVIRONMENT=dev&#34; &gt;&gt; $GITHUB_ENV
-</span><span class="sd">        echo &#34;DESTINATION=dev/테스트&#34; &gt;&gt; $GITHUB_ENV
-</span><span class="sd">        echo &#34;BRANCH=feature&#34; &gt;&gt; $GITHUB_ENV</span><span class="w">        
-</span><span class="w">    
-</span><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Set Prod env variables</span><span class="w">
-</span><span class="w">      </span><span class="nt">if</span><span class="p">:</span><span class="w"> </span><span class="l">endsWith(github.ref, &#39;/master&#39;)</span><span class="w">
-</span><span class="w">      </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
-</span><span class="sd">        echo &#34;Master branch&#34;
-</span><span class="sd">        echo &#34;ENVIRONMENT=prod&#34; &gt;&gt; $GITHUB_ENV
-</span><span class="sd">        echo &#34;DESTINATION=prod/테스트&#34; &gt;&gt; $GITHUB_ENV
-</span><span class="sd">        echo &#34;BRANCH=master&#34; &gt;&gt; $GITHUB_ENV</span><span class="w">        
-</span><span class="w">    
-</span><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Set commit msg </span><span class="w">
-</span><span class="w">      </span><span class="nt">env</span><span class="p">:</span><span class="w">
-</span><span class="w">        </span><span class="nt">GITHUB_SHA</span><span class="p">:</span><span class="w"> </span><span class="l">${{ github.sha }}</span><span class="w">
-</span><span class="w">      </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
-</span><span class="sd">        echo &#34;COMMIT_MSG=Update from https://github.com/your/테스트/$GITHUB_SHA&#34; &gt;&gt; $GITHUB_ENV
-</span><span class="sd">        echo $COMMIT_MSG</span><span class="w">        
-</span><span class="w">    </span><span class="c">#</span><span class="w">
-</span><span class="w">    </span><span class="c"># Push app image to ECR</span><span class="w">
-</span><span class="w">    </span><span class="c">#</span><span class="w">
-</span><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Configure AWS credentials</span><span class="w">
-</span><span class="w">      </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">aws-actions/configure-aws-credentials@v1</span><span class="w">
-</span><span class="w">      </span><span class="nt">with</span><span class="p">:</span><span class="w">
-</span><span class="w">        </span><span class="nt">aws-access-key-id</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.AWS_ACCESS_KEY_ID_VAL }}</span><span class="w">
-</span><span class="w">        </span><span class="nt">aws-secret-access-key</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.AWS_SECRET_ACCESS_KEY_VAL }}</span><span class="w">
-</span><span class="w">        </span><span class="nt">aws-region</span><span class="p">:</span><span class="w"> </span><span class="l">ap-northeast-2</span><span class="w">
-</span><span class="w">
-</span><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Login to Amazon ECR</span><span class="w">
-</span><span class="w">      </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l">login-ecr</span><span class="w">
-</span><span class="w">      </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">aws-actions/amazon-ecr-login@v1</span><span class="w">
-</span><span class="w">
-</span><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Build, tag, and push image to Amazon ECR</span><span class="w">
-</span><span class="w">      </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l">build-image</span><span class="w">
-</span><span class="w">      </span><span class="nt">env</span><span class="p">:</span><span class="w">
-</span><span class="w">        </span><span class="nt">ECR_REGISTRY</span><span class="p">:</span><span class="w"> </span><span class="l">${{ steps.login-ecr.outputs.registry }}</span><span class="w">
-</span><span class="w">        </span><span class="nt">ECR_REPOSITORY</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.ECR_REPOSITORY }}</span><span class="w">
-</span><span class="w">        </span><span class="nt">IMAGE_TAG</span><span class="p">:</span><span class="w"> </span><span class="l">${{ github.sha }}</span><span class="w">
-</span><span class="w">      </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
-</span><span class="sd">        docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$ENVIRONMENT-$IMAGE_TAG {Dockerfile 경로}
-</span><span class="sd">        docker push $ECR_REGISTRY/$ECR_REPOSITORY:$ENVIRONMENT-$IMAGE_TAG
-</span><span class="sd">        echo &#34;::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$ENVIRONMENT-$IMAGE_TAG&#34;
-</span><span class="sd">        </span><span class="w">        
-</span><span class="w">    </span><span class="c">#</span><span class="w">
-</span><span class="w">    </span><span class="c"># Update Image tag to delployment.yaml</span><span class="w">
-</span><span class="w">    </span><span class="c">#</span><span class="w">
-</span><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Git config</span><span class="w">
-</span><span class="w">      </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
-</span><span class="sd">        git config --global user.email &#34;actions@github.com&#34;
-</span><span class="sd">        git config --global user.name &#34;GitHub Actions&#34;
-</span><span class="sd">        </span><span class="w">        
-</span><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Check out k8s repo</span><span class="w">
-</span><span class="w">      </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/checkout@master</span><span class="w">
-</span><span class="w">      </span><span class="nt">with</span><span class="p">:</span><span class="w">
-</span><span class="w">        </span><span class="nt">repository</span><span class="p">:</span><span class="w"> </span><span class="l">your/gitops-repository</span><span class="w">
-</span><span class="w">        </span><span class="nt">token</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.GIT_ACCESS_TOKEN }}</span><span class="w">
-</span><span class="w">        
-</span><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">chmod repo destination</span><span class="w">
-</span><span class="w">      </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
-</span><span class="sd">        chmod +x $DESTINATION
-</span><span class="sd">        ls
-</span><span class="sd">        </span><span class="w">        
-</span><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">git push image tag to k8 repo </span><span class="w">
-</span><span class="w">      </span><span class="nt">env</span><span class="p">:</span><span class="w">
-</span><span class="w">        </span><span class="nt">GITHUB_REPO</span><span class="p">:</span><span class="w"> </span><span class="l">${{ github.repository.name }}</span><span class="w">
-</span><span class="w">        </span><span class="nt">GITHUB_SHA</span><span class="p">:</span><span class="w"> </span><span class="l">${{ github.sha }}</span><span class="w">
-</span><span class="w">      </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
-</span><span class="sd">        sed -i -e &#39;s@${{ steps.login-ecr.outputs.registry }}/${{ secrets.ECR_REPOSITORY }}:.*@${{ steps.build-image.outputs.image }}@g&#39; $DESTINATION/resources.yaml
-</span><span class="sd">        git add .
-</span><span class="sd">        git commit -m &#34;$COMMIT_MSG&#34;
-</span><span class="sd">        git push -f --set-upstream origin main</span><span class="w">        
-</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">on</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">push</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">branches</span><span class="p">:</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">master</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">feature</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Docker Image build &amp; k8s resources.yaml update</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">jobs</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">deploy</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Deploy</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l">ubuntu-latest</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">steps</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Checkout</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/checkout@v2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Set Dev env variables</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">if</span><span class="p">:</span><span class="w"> </span><span class="l">endsWith(github.ref, &#39;/feature&#39;)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
+</span></span></span><span class="line"><span class="cl"><span class="sd">        echo &#34;Feature branch&#34;
+</span></span></span><span class="line"><span class="cl"><span class="sd">        echo &#34;ENVIRONMENT=dev&#34; &gt;&gt; $GITHUB_ENV
+</span></span></span><span class="line"><span class="cl"><span class="sd">        echo &#34;DESTINATION=dev/테스트&#34; &gt;&gt; $GITHUB_ENV
+</span></span></span><span class="line"><span class="cl"><span class="sd">        echo &#34;BRANCH=feature&#34; &gt;&gt; $GITHUB_ENV</span><span class="w">        
+</span></span></span><span class="line"><span class="cl"><span class="w">    
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Set Prod env variables</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">if</span><span class="p">:</span><span class="w"> </span><span class="l">endsWith(github.ref, &#39;/master&#39;)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
+</span></span></span><span class="line"><span class="cl"><span class="sd">        echo &#34;Master branch&#34;
+</span></span></span><span class="line"><span class="cl"><span class="sd">        echo &#34;ENVIRONMENT=prod&#34; &gt;&gt; $GITHUB_ENV
+</span></span></span><span class="line"><span class="cl"><span class="sd">        echo &#34;DESTINATION=prod/테스트&#34; &gt;&gt; $GITHUB_ENV
+</span></span></span><span class="line"><span class="cl"><span class="sd">        echo &#34;BRANCH=master&#34; &gt;&gt; $GITHUB_ENV</span><span class="w">        
+</span></span></span><span class="line"><span class="cl"><span class="w">    
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Set commit msg </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">env</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">GITHUB_SHA</span><span class="p">:</span><span class="w"> </span><span class="l">${{ github.sha }}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
+</span></span></span><span class="line"><span class="cl"><span class="sd">        echo &#34;COMMIT_MSG=Update from https://github.com/your/테스트/$GITHUB_SHA&#34; &gt;&gt; $GITHUB_ENV
+</span></span></span><span class="line"><span class="cl"><span class="sd">        echo $COMMIT_MSG</span><span class="w">        
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c">#</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c"># Push app image to ECR</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c">#</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Configure AWS credentials</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">aws-actions/configure-aws-credentials@v1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">aws-access-key-id</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.AWS_ACCESS_KEY_ID_VAL }}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">aws-secret-access-key</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.AWS_SECRET_ACCESS_KEY_VAL }}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">aws-region</span><span class="p">:</span><span class="w"> </span><span class="l">ap-northeast-2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Login to Amazon ECR</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l">login-ecr</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">aws-actions/amazon-ecr-login@v1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Build, tag, and push image to Amazon ECR</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l">build-image</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">env</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">ECR_REGISTRY</span><span class="p">:</span><span class="w"> </span><span class="l">${{ steps.login-ecr.outputs.registry }}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">ECR_REPOSITORY</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.ECR_REPOSITORY }}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">IMAGE_TAG</span><span class="p">:</span><span class="w"> </span><span class="l">${{ github.sha }}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
+</span></span></span><span class="line"><span class="cl"><span class="sd">        docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$ENVIRONMENT-$IMAGE_TAG {Dockerfile 경로}
+</span></span></span><span class="line"><span class="cl"><span class="sd">        docker push $ECR_REGISTRY/$ECR_REPOSITORY:$ENVIRONMENT-$IMAGE_TAG
+</span></span></span><span class="line"><span class="cl"><span class="sd">        echo &#34;::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$ENVIRONMENT-$IMAGE_TAG&#34;
+</span></span></span><span class="line"><span class="cl"><span class="sd">        </span><span class="w">        
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c">#</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c"># Update Image tag to delployment.yaml</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c">#</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Git config</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
+</span></span></span><span class="line"><span class="cl"><span class="sd">        git config --global user.email &#34;actions@github.com&#34;
+</span></span></span><span class="line"><span class="cl"><span class="sd">        git config --global user.name &#34;GitHub Actions&#34;
+</span></span></span><span class="line"><span class="cl"><span class="sd">        </span><span class="w">        
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Check out k8s repo</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/checkout@master</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">repository</span><span class="p">:</span><span class="w"> </span><span class="l">your/gitops-repository</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">token</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.GIT_ACCESS_TOKEN }}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">chmod repo destination</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
+</span></span></span><span class="line"><span class="cl"><span class="sd">        chmod +x $DESTINATION
+</span></span></span><span class="line"><span class="cl"><span class="sd">        ls
+</span></span></span><span class="line"><span class="cl"><span class="sd">        </span><span class="w">        
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">git push image tag to k8 repo </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">env</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">GITHUB_REPO</span><span class="p">:</span><span class="w"> </span><span class="l">${{ github.repository.name }}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">GITHUB_SHA</span><span class="p">:</span><span class="w"> </span><span class="l">${{ github.sha }}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
+</span></span></span><span class="line"><span class="cl"><span class="sd">        sed -i -e &#39;s@${{ steps.login-ecr.outputs.registry }}/${{ secrets.ECR_REPOSITORY }}:.*@${{ steps.build-image.outputs.image }}@g&#39; $DESTINATION/resources.yaml
+</span></span></span><span class="line"><span class="cl"><span class="sd">        git add .
+</span></span></span><span class="line"><span class="cl"><span class="sd">        git commit -m &#34;$COMMIT_MSG&#34;
+</span></span></span><span class="line"><span class="cl"><span class="sd">        git push -f --set-upstream origin main</span><span class="w">        
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>    구조를 보면 <strong>트리거 / build 환경 / 실제 수행할 step</strong>들이 정의되어 있다. feature, master branch 에 push될때 dev와 production 서버를 업데이트 하기위한 github action이다. 라인별 설명은 아래와 같다.<br />
 <div class="box"><strong>line 19~33</strong>  : GitOps repository에 해당 프로젝트의 kubernetes 리소스들이 있는 path를 지정해준다.(dev, prod)<br />
@@ -2368,7 +2368,7 @@
 </div>
 
 
-<script defer src="/js/swipe.min.989e074dfb92ce7f57a92c1df7027f88b53c50a54fd9ad450a673a64aa91bfa4.js"></script>
+<script defer src="/js/swipe.min.5b45017db39b94db049dd81e997decf8d1d711d8e3efcb65cde3b58e7e456506.js"></script>
 
 <script defer src="/js/micromodal.min.de01b44b2f383056bbcaf6ee921fd385d79108ec1129afd0eb2f3f5a07e11f45.js"></script>
 
@@ -3057,7 +3057,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (lib && lib.includes('mermaid')) {
       
-      var themeVariant = localStorage.getItem('theme') || JSON.parse("\"light\"");
+      var themeVariant = localStorage.getItem('theme') || JSON.parse("\"dark\"");
 
       if (themeVariant === "dark" || themeVariant === "hacker") {
         mermaid.initialize({ theme: 'dark' });
