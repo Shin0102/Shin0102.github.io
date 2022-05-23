@@ -14,7 +14,7 @@
     <managingEditor>shinalli0102@gmail.com (shin alli)</managingEditor>
     <webMaster>shinalli0102@gmail.com (shin alli)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 17 May 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 May 2022 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://Shin0102.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -25,10 +25,100 @@
       <item>
         <title>AI</title>
         <link>https://Shin0102.github.io/tags/ai/</link>
-        <pubDate>Tue, 17 May 2022 00:00:00 +0000</pubDate>
+        <pubDate>Wed, 18 May 2022 00:00:00 +0000</pubDate>
         <author>shinalli0102@gmail.com (shin alli)</author>
         
         <guid>https://Shin0102.github.io/tags/ai/</guid>
+        <description></description>
+        
+        <dc:creator>shin alli</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Decision Tree</title>
+        <link>https://Shin0102.github.io/tags/decision-tree/</link>
+        <pubDate>Wed, 18 May 2022 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        
+        <guid>https://Shin0102.github.io/tags/decision-tree/</guid>
+        <description></description>
+        
+        <dc:creator>shin alli</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Ensemble</title>
+        <link>https://Shin0102.github.io/tags/ensemble/</link>
+        <pubDate>Wed, 18 May 2022 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        
+        <guid>https://Shin0102.github.io/tags/ensemble/</guid>
+        <description></description>
+        
+        <dc:creator>shin alli</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Linear Model</title>
+        <link>https://Shin0102.github.io/tags/linear-model/</link>
+        <pubDate>Wed, 18 May 2022 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        
+        <guid>https://Shin0102.github.io/tags/linear-model/</guid>
+        <description></description>
+        
+        <dc:creator>shin alli</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Supervised Learning</title>
+        <link>https://Shin0102.github.io/tags/supervised-learning/</link>
+        <pubDate>Wed, 18 May 2022 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        
+        <guid>https://Shin0102.github.io/tags/supervised-learning/</guid>
+        <description></description>
+        
+        <dc:creator>shin alli</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>TIL</title>
+        <link>https://Shin0102.github.io/tags/til/</link>
+        <pubDate>Wed, 18 May 2022 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        
+        <guid>https://Shin0102.github.io/tags/til/</guid>
         <description></description>
         
         <dc:creator>shin alli</dc:creator>
@@ -65,24 +155,6 @@
         <author>shinalli0102@gmail.com (shin alli)</author>
         
         <guid>https://Shin0102.github.io/tags/machine-learning/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>TIL</title>
-        <link>https://Shin0102.github.io/tags/til/</link>
-        <pubDate>Tue, 17 May 2022 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/til/</guid>
         <description></description>
         
         <dc:creator>shin alli</dc:creator>

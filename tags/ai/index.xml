@@ -14,7 +14,7 @@
     <managingEditor>shinalli0102@gmail.com (shin alli)</managingEditor>
     <webMaster>shinalli0102@gmail.com (shin alli)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 17 May 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 May 2022 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://Shin0102.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml" />
     
@@ -23,13 +23,63 @@
 
       
       <item>
+        <title>[TIL] 쏘카 X 멋쟁이사자처럼 (AI 엔지니어 육성 부트 캠프 2기) 2주차</title>
+        <link>https://Shin0102.github.io/posts/socar-ai-bootcamp-til-2/</link>
+        <pubDate>Wed, 18 May 2022 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        <atom:modified>Wed, 18 May 2022 00:00:00 +0000</atom:modified>
+        <guid>https://Shin0102.github.io/posts/socar-ai-bootcamp-til-2/</guid>
+        <description>2주차 Supervised Learning Linear Model Decision Tree Ensemble (실습) Logistic Regression (실습) Decision Tree Supervised Learning 정답 레이블이 있는 training set (y=f(x)) Supervised Learning에 예시들: Linear Model: 가장 기본이 되는 모델 Linear Regression Logistic Regression: decision bound</description>
+        
+        <dc:creator>shin alli</dc:creator>
+        <media:content url="https://Shin0102.github.ioimages/socar-ai.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        <media:content url="https://Shin0102.github.iostatic/images/socar-ai.png" medium="image"><media:title type="html">meta image</media:title></media:content>
+        
+          
+            
+              <category>TIL</category>
+            
+          
+            
+              <category>AI</category>
+            
+          
+            
+              <category>Supervised Learning</category>
+            
+          
+            
+              <category>Linear Model</category>
+            
+          
+            
+              <category>Decision Tree</category>
+            
+          
+            
+              <category>Ensemble</category>
+            
+          
+        
+        
+          
+            
+              <category>쏘카 X 멋쟁이사자처럼 AI 부트 캠프</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
         <title>[TIL] 쏘카 X 멋쟁이사자처럼 (AI 엔지니어 육성 부트 캠프 2기) 1주차</title>
-        <link>https://Shin0102.github.io/posts/socar-ai-bootcamp-til-12/</link>
+        <link>https://Shin0102.github.io/posts/socar-ai-bootcamp-til-1/</link>
         <pubDate>Tue, 17 May 2022 00:00:00 +0000</pubDate>
         <author>shinalli0102@gmail.com (shin alli)</author>
         <atom:modified>Tue, 17 May 2022 00:00:00 +0000</atom:modified>
-        <guid>https://Shin0102.github.io/posts/socar-ai-bootcamp-til-12/</guid>
-        <description>1주차 AI, 머신러닝, 딥러닝의 이해 머신러닝 basic 머신러닝 문제의 분류 학습방법의 분류 numpy 실습 AI &amp;gt; Machine Learning &amp;gt; Deep Learning 1. AI 사람처럼 행동하고 생각하고, 합리적으로 생각하고</description>
+        <guid>https://Shin0102.github.io/posts/socar-ai-bootcamp-til-1/</guid>
+        <description>1주차 AI, 머신러닝, 딥러닝의 이해 머신러닝 basic 머신러닝 문제의 분류 학습방법의 분류 (실습) numpy AI &amp;gt; Machine Learning &amp;gt; Deep Learning 1. AI 사람처럼 행동하고 생각하고, 합리적으로 생각</description>
         
         <dc:creator>shin alli</dc:creator>
         <media:content url="https://Shin0102.github.ioimages/socar-ai.png" medium="image"><media:title type="html">featured image</media:title></media:content>
@@ -57,7 +107,7 @@
         
           
             
-              <category>AI</category>
+              <category>쏘카 X 멋쟁이사자처럼 AI 부트 캠프</category>
             
           
         
