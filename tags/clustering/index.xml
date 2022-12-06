@@ -23,13 +23,13 @@
 
       
       <item>
-        <title>[TIL] 쏘카 X 멋쟁이사자처럼 (AI 엔지니어 육성 부트 캠프 2기) 3주차</title>
+        <title>Unsupervised Learning - Dimensionallity Reduction, Clustering</title>
         <link>https://Shin0102.github.io/posts/socar-ai-bootcamp-til-3/</link>
         <pubDate>Wed, 25 May 2022 00:00:00 +0000</pubDate>
         <author>shinalli0102@gmail.com (shin alli)</author>
         <atom:modified>Wed, 25 May 2022 00:00:00 +0000</atom:modified>
         <guid>https://Shin0102.github.io/posts/socar-ai-bootcamp-til-3/</guid>
-        <description>3주차 Unsupervised Learning Dimensionallity Reduction Clustering (실습) Data Analysis with Pandas Unsupervised Learning 정답 label이 없는 트레이닝셋이 주어짐 input feature에서 의미있는 패턴 찾기 시각화, 전처리, 차원축소등의 데</description>
+        <description>들어가며 3주차 강의에 접어들었다. 이번 강의는 Machine Learning중 output이 주어지지 않는 Unsupervised Learning에 대한 내용이다. 생소한 수식들과 처음</description>
         
         <dc:creator>shin alli</dc:creator>
         <media:content url="https://Shin0102.github.ioimages/socar-ai.png" medium="image"><media:title type="html">featured image</media:title></media:content>

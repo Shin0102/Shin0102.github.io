@@ -29,7 +29,7 @@
         <author>shinalli0102@gmail.com (shin alli)</author>
         <atom:modified>Sat, 19 Dec 2020 00:00:00 +0000</atom:modified>
         <guid>https://Shin0102.github.io/posts/devops-aws-eks-role/</guid>
-        <description>MSA(microservice architectur)를 위해 CDK(typescript)를 통해 EKS를 구성한 적이 있는데, 이때는 동작에만 집중하다 보니, 자동으로 생성되는 리</description>
+        <description>MSA(microservice architecture)를 위해 CDK(typescript)를 통해 EKS를 구성한 적이 있는데, 이때는 동작에만 집중하다 보니, 자동으로 생성되는</description>
         
         <dc:creator>shin alli</dc:creator>
         <media:content url="https://Shin0102.github.ioimages/aws-eks.png" medium="image"><media:title type="html">featured image</media:title></media:content>

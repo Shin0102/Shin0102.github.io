@@ -23,13 +23,13 @@
 
       
       <item>
-        <title>[TIL] 쏘카 X 멋쟁이사자처럼 (AI 엔지니어 육성 부트 캠프 2기) 1주차</title>
+        <title>AI, Machine Learning, Deep Learning?</title>
         <link>https://Shin0102.github.io/posts/socar-ai-bootcamp-til-1/</link>
         <pubDate>Tue, 17 May 2022 00:00:00 +0000</pubDate>
         <author>shinalli0102@gmail.com (shin alli)</author>
         <atom:modified>Tue, 17 May 2022 00:00:00 +0000</atom:modified>
         <guid>https://Shin0102.github.io/posts/socar-ai-bootcamp-til-1/</guid>
-        <description>1주차 AI, 머신러닝, 딥러닝의 이해 머신러닝 basic 머신러닝 문제의 분류 학습방법의 분류 (실습) numpy AI &amp;gt; Machine Learning &amp;gt; Deep Learning 1. AI 사람처럼 행동하고 생각하고, 합리적으로 생각</description>
+        <description>들어가며 AI에 대해서 흥미는 있었지만, 막연하게 미디어에서만 접하다가 좀 더 깊이 있게 배워보고 싶다는 생각을 하던 중에 project lion이란 곳에서 AI 부트 캠프를 시작</description>
         
         <dc:creator>shin alli</dc:creator>
         <media:content url="https://Shin0102.github.ioimages/socar-ai.png" medium="image"><media:title type="html">featured image</media:title></media:content>
