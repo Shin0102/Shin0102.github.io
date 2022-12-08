@@ -14,13 +14,59 @@
     <managingEditor>shinalli0102@gmail.com (shin alli)</managingEditor>
     <webMaster>shinalli0102@gmail.com (shin alli)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 31 May 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Jun 2022 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://Shin0102.github.io/categories/%EC%8F%98%EC%B9%B4-x-%EB%A9%8B%EC%9F%81%EC%9D%B4%EC%82%AC%EC%9E%90%EC%B2%98%EB%9F%BC-ai-%EB%B6%80%ED%8A%B8-%EC%BA%A0%ED%94%84/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>Backward Pass, Optimizer, Batch Normalization</title>
+        <link>https://Shin0102.github.io/posts/socar-ai-bootcamp-til-5/</link>
+        <pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        <atom:modified>Tue, 07 Jun 2022 00:00:00 +0000</atom:modified>
+        <guid>https://Shin0102.github.io/posts/socar-ai-bootcamp-til-5/</guid>
+        <description>들어가며 5주차 강의에 접어들었다. 이번장에서는 MLP의 전반적인 과정에 대한 내용이었고, 그중에서 Forward Pass, Backward Pass에 대한 내용이 주요 내용이었다. 그리고 최</description>
+        
+        <dc:creator>shin alli</dc:creator>
+        <media:content url="https://Shin0102.github.ioimages/socar-ai.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        <media:content url="https://Shin0102.github.iostatic/images/socar-ai.png" medium="image"><media:title type="html">meta image</media:title></media:content>
+        
+          
+            
+              <category>TIL</category>
+            
+          
+            
+              <category>AI</category>
+            
+          
+            
+              <category>Backward PAss</category>
+            
+          
+            
+              <category>Optimizer</category>
+            
+          
+            
+              <category>Batch Normalization</category>
+            
+          
+        
+        
+          
+            
+              <category>쏘카 X 멋쟁이사자처럼 AI 부트 캠프</category>
+            
+          
+        
+        
+      </item>
       
       <item>
         <title>Multi-Layer Perceptron</title>
