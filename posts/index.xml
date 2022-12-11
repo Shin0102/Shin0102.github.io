@@ -14,13 +14,59 @@
     <managingEditor>shinalli0102@gmail.com (shin alli)</managingEditor>
     <webMaster>shinalli0102@gmail.com (shin alli)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 07 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jun 2022 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://Shin0102.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>Convolutional Neural network</title>
+        <link>https://Shin0102.github.io/posts/socar-ai-bootcamp-til-6/</link>
+        <pubDate>Tue, 14 Jun 2022 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        <atom:modified>Tue, 14 Jun 2022 00:00:00 +0000</atom:modified>
+        <guid>https://Shin0102.github.io/posts/socar-ai-bootcamp-til-6/</guid>
+        <description>들어가며 6주차 강의에 접어들었다. 이번 강의는 컴퓨터 비전의 핵심적인 CNN에 대한 내용이다. 컴퓨터가 이미지를 어떻게 처리하고 어떻게 학습시키는지에 대해 배</description>
+        
+        <dc:creator>shin alli</dc:creator>
+        <media:content url="https://Shin0102.github.ioimages/socar-ai.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        <media:content url="https://Shin0102.github.iostatic/images/socar-ai.png" medium="image"><media:title type="html">meta image</media:title></media:content>
+        
+          
+            
+              <category>TIL</category>
+            
+          
+            
+              <category>AI</category>
+            
+          
+            
+              <category>Convolutional Filter</category>
+            
+          
+            
+              <category>Convolutional Neural network</category>
+            
+          
+            
+              <category>Padding, Stride - Feature map의 크기</category>
+            
+          
+        
+        
+          
+            
+              <category>쏘카 X 멋쟁이사자처럼 AI 부트 캠프</category>
+            
+          
+        
+        
+      </item>
       
       <item>
         <title>Backward Pass, Optimizer, Batch Normalization</title>
