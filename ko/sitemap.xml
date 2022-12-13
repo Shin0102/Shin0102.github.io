@@ -4,14 +4,21 @@
   
   <url>
     <loc>https://Shin0102.github.io/tags/ai/</loc>
-    <lastmod>2022-06-14T00:00:00+00:00</lastmod>
+    <lastmod>2022-06-21T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/tags/alexnet/</loc>
+    <lastmod>2022-06-21T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://Shin0102.github.io/</loc>
-    <lastmod>2022-06-14T00:00:00+00:00</lastmod>
+    <lastmod>2022-06-21T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -27,8 +34,15 @@
   </url>
   
   <url>
+    <loc>https://Shin0102.github.io/tags/autoencoder/</loc>
+    <lastmod>2022-06-21T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://Shin0102.github.io/categories/</loc>
-    <lastmod>2022-06-14T00:00:00+00:00</lastmod>
+    <lastmod>2022-06-21T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -41,6 +55,86 @@
                 hreflang="ko"
                 href="https://Shin0102.github.io/categories/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/tags/cnn/</loc>
+    <lastmod>2022-06-21T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/posts/socar-ai-bootcamp-til-7/</loc>
+    <lastmod>2022-06-21T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/posts/</loc>
+    <lastmod>2022-06-21T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/tags/resnet/</loc>
+    <lastmod>2022-06-21T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/tags/semantic-segmentation/</loc>
+    <lastmod>2022-06-21T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/tags/</loc>
+    <lastmod>2022-06-21T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Shin0102.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://Shin0102.github.io/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/tags/til/</loc>
+    <lastmod>2022-06-21T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/tags/upsampling/</loc>
+    <lastmod>2022-06-21T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/tags/vggnet/</loc>
+    <lastmod>2022-06-21T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/categories/%EC%8F%98%EC%B9%B4-x-%EB%A9%8B%EC%9F%81%EC%9D%B4%EC%82%AC%EC%9E%90%EC%B2%98%EB%9F%BC-ai-%EB%B6%80%ED%8A%B8-%EC%BA%A0%ED%94%84/</loc>
+    <lastmod>2022-06-21T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -66,44 +160,6 @@
   
   <url>
     <loc>https://Shin0102.github.io/tags/padding-stride-feature-map%EC%9D%98-%ED%81%AC%EA%B8%B0/</loc>
-    <lastmod>2022-06-14T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://Shin0102.github.io/posts/</loc>
-    <lastmod>2022-06-14T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://Shin0102.github.io/tags/</loc>
-    <lastmod>2022-06-14T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Shin0102.github.io/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://Shin0102.github.io/tags/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://Shin0102.github.io/tags/til/</loc>
-    <lastmod>2022-06-14T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://Shin0102.github.io/categories/%EC%8F%98%EC%B9%B4-x-%EB%A9%8B%EC%9F%81%EC%9D%B4%EC%82%AC%EC%9E%90%EC%B2%98%EB%9F%BC-ai-%EB%B6%80%ED%8A%B8-%EC%BA%A0%ED%94%84/</loc>
     <lastmod>2022-06-14T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

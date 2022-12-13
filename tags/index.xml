@@ -14,7 +14,7 @@
     <managingEditor>shinalli0102@gmail.com (shin alli)</managingEditor>
     <webMaster>shinalli0102@gmail.com (shin alli)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 14 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Jun 2022 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://Shin0102.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -25,10 +25,154 @@
       <item>
         <title>AI</title>
         <link>https://Shin0102.github.io/tags/ai/</link>
-        <pubDate>Tue, 14 Jun 2022 00:00:00 +0000</pubDate>
+        <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
         <author>shinalli0102@gmail.com (shin alli)</author>
         
         <guid>https://Shin0102.github.io/tags/ai/</guid>
+        <description></description>
+        
+        <dc:creator>shin alli</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>AlexNet</title>
+        <link>https://Shin0102.github.io/tags/alexnet/</link>
+        <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        
+        <guid>https://Shin0102.github.io/tags/alexnet/</guid>
+        <description></description>
+        
+        <dc:creator>shin alli</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Autoencoder</title>
+        <link>https://Shin0102.github.io/tags/autoencoder/</link>
+        <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        
+        <guid>https://Shin0102.github.io/tags/autoencoder/</guid>
+        <description></description>
+        
+        <dc:creator>shin alli</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>CNN</title>
+        <link>https://Shin0102.github.io/tags/cnn/</link>
+        <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        
+        <guid>https://Shin0102.github.io/tags/cnn/</guid>
+        <description></description>
+        
+        <dc:creator>shin alli</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>ResNet</title>
+        <link>https://Shin0102.github.io/tags/resnet/</link>
+        <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        
+        <guid>https://Shin0102.github.io/tags/resnet/</guid>
+        <description></description>
+        
+        <dc:creator>shin alli</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Semantic Segmentation</title>
+        <link>https://Shin0102.github.io/tags/semantic-segmentation/</link>
+        <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        
+        <guid>https://Shin0102.github.io/tags/semantic-segmentation/</guid>
+        <description></description>
+        
+        <dc:creator>shin alli</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>TIL</title>
+        <link>https://Shin0102.github.io/tags/til/</link>
+        <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        
+        <guid>https://Shin0102.github.io/tags/til/</guid>
+        <description></description>
+        
+        <dc:creator>shin alli</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Upsampling</title>
+        <link>https://Shin0102.github.io/tags/upsampling/</link>
+        <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        
+        <guid>https://Shin0102.github.io/tags/upsampling/</guid>
+        <description></description>
+        
+        <dc:creator>shin alli</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>VGGNet</title>
+        <link>https://Shin0102.github.io/tags/vggnet/</link>
+        <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        
+        <guid>https://Shin0102.github.io/tags/vggnet/</guid>
         <description></description>
         
         <dc:creator>shin alli</dc:creator>
@@ -83,24 +227,6 @@
         <author>shinalli0102@gmail.com (shin alli)</author>
         
         <guid>https://Shin0102.github.io/tags/padding-stride-feature-map%EC%9D%98-%ED%81%AC%EA%B8%B0/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>TIL</title>
-        <link>https://Shin0102.github.io/tags/til/</link>
-        <pubDate>Tue, 14 Jun 2022 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/til/</guid>
         <description></description>
         
         <dc:creator>shin alli</dc:creator>
