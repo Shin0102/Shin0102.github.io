@@ -14,7 +14,7 @@
     <managingEditor>shinalli0102@gmail.com (shin alli)</managingEditor>
     <webMaster>shinalli0102@gmail.com (shin alli)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 21 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jun 2022 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://Shin0102.github.io/categories/%EC%8F%98%EC%B9%B4-x-%EB%A9%8B%EC%9F%81%EC%9D%B4%EC%82%AC%EC%9E%90%EC%B2%98%EB%9F%BC-ai-%EB%B6%80%ED%8A%B8-%EC%BA%A0%ED%94%84/index.xml" rel="self" type="application/rss+xml" />
     
@@ -23,13 +23,75 @@
 
       
       <item>
+        <title>어떤 문제들을 AI와 딥러닝으로 해결할 수 있을까요?</title>
+        <link>https://Shin0102.github.io/posts/socar-ai-bootcamp-til-8/</link>
+        <pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        <atom:modified>Tue, 28 Jun 2022 00:00:00 +0000</atom:modified>
+        <guid>https://Shin0102.github.io/posts/socar-ai-bootcamp-til-8/</guid>
+        <description>들어가며 마지막 8주차 강의이다. 이번 강의에서는 다양한 딥러닝 모델과 그것들을 어디에 활용하는지에 대해 배웠다. 각 모델들의 자세한 설명보다는 간단간단한 컨셉</description>
+        
+        <dc:creator>shin alli</dc:creator>
+        <media:content url="https://Shin0102.github.ioimages/socar-ai.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        <media:content url="https://Shin0102.github.iostatic/images/socar-ai.png" medium="image"><media:title type="html">meta image</media:title></media:content>
+        
+          
+            
+              <category>TIL</category>
+            
+          
+            
+              <category>AI</category>
+            
+          
+            
+              <category>Transfer Learning</category>
+            
+          
+            
+              <category>Ensemble Learning</category>
+            
+          
+            
+              <category>Self-supervised Learning</category>
+            
+          
+            
+              <category>Grad-CAM</category>
+            
+          
+            
+              <category>GAN</category>
+            
+          
+            
+              <category>RNN</category>
+            
+          
+            
+              <category>Attention Model</category>
+            
+          
+        
+        
+          
+            
+              <category>쏘카 X 멋쟁이사자처럼 AI 부트 캠프</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
         <title>CNN, Autoencoder, Upsampling, Semantic Segmentation</title>
         <link>https://Shin0102.github.io/posts/socar-ai-bootcamp-til-7/</link>
         <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
         <author>shinalli0102@gmail.com (shin alli)</author>
         <atom:modified>Tue, 21 Jun 2022 00:00:00 +0000</atom:modified>
         <guid>https://Shin0102.github.io/posts/socar-ai-bootcamp-til-7/</guid>
-        <description>들어가며 7주차 강의에 접어들었다. 이번강의에서는 대표적인 CNN 모델들과 모델에 사용되는 대표적인 작동방식(Residual Block, Bottleneck Block, Autoencoder</description>
+        <description>들어가며 7주차 강의에 접어들었다. 이번 강의에서는 대표적인 CNN 모델들과 모델에 사용되는 대표적인 작동방식(Residual Block, Bottleneck Block, Autoencoder</description>
         
         <dc:creator>shin alli</dc:creator>
         <media:content url="https://Shin0102.github.ioimages/socar-ai.png" medium="image"><media:title type="html">featured image</media:title></media:content>
@@ -154,7 +216,7 @@
             
           
             
-              <category>Backward PAss</category>
+              <category>Backward Pass</category>
             
           
             
