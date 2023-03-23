@@ -14,13 +14,43 @@
     <managingEditor>shinalli0102@gmail.com (shin alli)</managingEditor>
     <webMaster>shinalli0102@gmail.com (shin alli)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 28 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Feb 2023 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://Shin0102.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>2022 회고</title>
+        <link>https://Shin0102.github.io/posts/retrospect-2022/</link>
+        <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        <atom:modified>Wed, 01 Feb 2023 00:00:00 +0000</atom:modified>
+        <guid>https://Shin0102.github.io/posts/retrospect-2022/</guid>
+        <description>들어가며 어느덧 2023년 1달이 지났다. 연초에 위염+장염이 심하게 걸리는 바람에 회고를 뒤늦게 쓰게 되었다. 개인적으로 2017년 부터 노션에 새해 목표를 정</description>
+        
+        <dc:creator>shin alli</dc:creator>
+        <media:content url="https://Shin0102.github.ioimages/retrospect-2023/2023.jpg" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        <media:content url="https://Shin0102.github.iostatic/images/retrospect-2023/2023.jpg" medium="image"><media:title type="html">meta image</media:title></media:content>
+        
+          
+            
+              <category>2022 회고</category>
+            
+          
+        
+        
+          
+            
+              <category>회고</category>
+            
+          
+        
+        
+      </item>
       
       <item>
         <title>어떤 문제들을 AI와 딥러닝으로 해결할 수 있을까요?</title>

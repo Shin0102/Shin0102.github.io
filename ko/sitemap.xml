@@ -3,15 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://Shin0102.github.io/tags/ai/</loc>
-    <lastmod>2022-06-28T00:00:00+00:00</lastmod>
+    <loc>https://Shin0102.github.io/tags/2022-%ED%9A%8C%EA%B3%A0/</loc>
+    <lastmod>2023-02-01T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/posts/retrospect-2022/</loc>
+    <lastmod>2023-02-01T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://Shin0102.github.io/</loc>
-    <lastmod>2022-06-28T00:00:00+00:00</lastmod>
+    <lastmod>2023-02-01T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -27,15 +34,8 @@
   </url>
   
   <url>
-    <loc>https://Shin0102.github.io/tags/attention-model/</loc>
-    <lastmod>2022-06-28T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://Shin0102.github.io/categories/</loc>
-    <lastmod>2022-06-28T00:00:00+00:00</lastmod>
+    <lastmod>2023-02-01T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -48,6 +48,51 @@
                 hreflang="ko"
                 href="https://Shin0102.github.io/categories/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/posts/</loc>
+    <lastmod>2023-02-01T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/tags/</loc>
+    <lastmod>2023-02-01T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Shin0102.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://Shin0102.github.io/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/categories/%ED%9A%8C%EA%B3%A0/</loc>
+    <lastmod>2023-02-01T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/tags/ai/</loc>
+    <lastmod>2022-06-28T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/tags/attention-model/</loc>
+    <lastmod>2022-06-28T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -72,13 +117,6 @@
   </url>
   
   <url>
-    <loc>https://Shin0102.github.io/posts/</loc>
-    <lastmod>2022-06-28T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://Shin0102.github.io/tags/rnn/</loc>
     <lastmod>2022-06-28T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
@@ -90,23 +128,6 @@
     <lastmod>2022-06-28T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://Shin0102.github.io/tags/</loc>
-    <lastmod>2022-06-28T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Shin0102.github.io/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://Shin0102.github.io/tags/"
-                />
   </url>
   
   <url>
