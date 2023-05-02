@@ -14,13 +14,67 @@
     <managingEditor>shinalli0102@gmail.com (shin alli)</managingEditor>
     <webMaster>shinalli0102@gmail.com (shin alli)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Wed, 01 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 May 2023 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://Shin0102.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>aws summit</title>
+        <link>https://Shin0102.github.io/tags/aws-summit/</link>
+        <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        
+        <guid>https://Shin0102.github.io/tags/aws-summit/</guid>
+        <description></description>
+        
+        <dc:creator>shin alli</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>database</title>
+        <link>https://Shin0102.github.io/tags/database/</link>
+        <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        
+        <guid>https://Shin0102.github.io/tags/database/</guid>
+        <description></description>
+        
+        <dc:creator>shin alli</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>msa</title>
+        <link>https://Shin0102.github.io/tags/msa/</link>
+        <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        
+        <guid>https://Shin0102.github.io/tags/msa/</guid>
+        <description></description>
+        
+        <dc:creator>shin alli</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>2022 회고</title>
@@ -713,24 +767,6 @@
         <author>shinalli0102@gmail.com (shin alli)</author>
         
         <guid>https://Shin0102.github.io/tags/%ED%92%80%EC%8A%A4%ED%83%9D/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>MSA</title>
-        <link>https://Shin0102.github.io/tags/msa/</link>
-        <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/msa/</guid>
         <description></description>
         
         <dc:creator>shin alli</dc:creator>
