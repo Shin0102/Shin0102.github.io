@@ -1336,9 +1336,9 @@
 <meta name="description" content="신알리의 블로그" />
 
 
-<meta name="created" content="2023-05-01T00:00:00&#43;0000">
-<meta name="modified" content="2023-05-01T00:00:00&#43;0000">
-<meta property="article:published_time" content="2023-05-01T00:00:00&#43;0000">
+<meta name="created" content="2023-07-06T00:00:00&#43;0000">
+<meta name="modified" content="2023-07-06T00:00:00&#43;0000">
+<meta property="article:published_time" content="2023-07-06T00:00:00&#43;0000">
 
 <meta name="author" content="shin alli">
 
@@ -1639,6 +1639,45 @@
 
     
     <div class="summary-classic__image-container summary-classic__image-wrapper" data-position="right" data-hwm="">
+      <a href="https://Shin0102.github.io/posts/aws-eb-nginx-config/">
+        <img data-src="/images/aws-eb-nginx-config/elastic_beanstalk_logo.png" alt="AWS Elastic Beanstalk 환경 구성하기" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload summary-classic__image" data-ani="true" data-hwm="" style=""/>
+      </a>
+    </div>
+    
+
+    <div class="summary-classic__content">
+      <header>
+        <h5 class="title h5"><a href='https://Shin0102.github.io/posts/aws-eb-nginx-config/'>AWS Elastic Beanstalk 환경 구성하기</a> </h5>
+        <h6 class="subtitle caption">
+          <time title="작성일" dir="ltr">📅&nbsp;2023년 07월 06일 </time>
+          
+          <span title="읽는 시간" dir="ltr"> &middot; ☕&nbsp;3&nbsp;min read </span>
+          
+        </h6>
+      </header>
+      <div>
+        <div class="summary-classic__text p2">
+          
+            들어가며 Elastic Beanstalk(이하 EB)은 어플리케이션 배포/관리(프로비저닝, 로드 밸런싱, 스케일링, 모니터링등)를 손쉽게 할수 있도록 도와주는 AWS
+          
+        </div>
+      </div>
+    </div>
+
+    
+    
+  </div>
+  <hr />
+</article>
+
+
+            
+                
+  <article class="summary-classic" data-ani="true">
+  <div class="summary-classic__flex-box" >
+
+    
+    <div class="summary-classic__image-container summary-classic__image-wrapper" data-position="right" data-hwm="">
       <a href="https://Shin0102.github.io/posts/aws-summit-2022-msa/">
         <img data-src="/images/aws-summit-2022/aws-summit-2022.png" alt="일체형 데이터베이스, 목적에 맞게 MSA 구조로 전환하기" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload summary-classic__image" data-ani="true" data-hwm="" style=""/>
       </a>
@@ -1658,7 +1697,7 @@
       <div>
         <div class="summary-classic__text p2">
           
-            들어가며 현재 회사에서 Monolothic Django로 서비스를 운영중이다. Django Admin 비동기 처리를 위한 Worker는 다른 Elastic Beanstalk 서버로 운영중이지만 같은 DB, 소스코드를 공유중인
+            들어가며 현재 회사에서 Monolothic Django로 서비스를 운영중이다. Django Admin, 비동기 처리를 위한 Worker 서버는 다른 Elastic Beanstalk 서버로 운영중이지만 같은 DB, 소스코드를 공유중인 상태로
           
         </div>
       </div>
@@ -2101,45 +2140,6 @@
 
 
             
-                
-  <article class="summary-classic" data-ani="true">
-  <div class="summary-classic__flex-box" >
-
-    
-    <div class="summary-classic__image-container summary-classic__image-wrapper" data-position="right" data-hwm="">
-      <a href="https://Shin0102.github.io/posts/devops-github-action/">
-        <img data-src="/images/github-action.png" alt="github action으로 Kubernetes 배포 자동화" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload summary-classic__image" data-ani="true" data-hwm="" style=""/>
-      </a>
-    </div>
-    
-
-    <div class="summary-classic__content">
-      <header>
-        <h5 class="title h5"><a href='https://Shin0102.github.io/posts/devops-github-action/'>github action으로 Kubernetes 배포 자동화</a> </h5>
-        <h6 class="subtitle caption">
-          <time title="작성일" dir="ltr">📅&nbsp;2020년 12월 30일 </time>
-          
-          <span title="읽는 시간" dir="ltr"> &middot; ☕&nbsp;6&nbsp;min read </span>
-          
-        </h6>
-      </header>
-      <div>
-        <div class="summary-classic__text p2">
-          
-            들어가며 작년부터 회사의 거대한 레거시 시스템을 Python 기반의 API 서버로 조금씩 포팅하고 있다. 한번에 모두 포팅하기란 불가능하기에 MSA를 기반으로 여러 기능들로 나
-          
-        </div>
-      </div>
-    </div>
-
-    
-    
-  </div>
-  <hr />
-</article>
-
-
-            
             
 
 
@@ -2208,6 +2208,10 @@
     
         
         <li class="sidebar-recent">
+            <a href="/posts/aws-eb-nginx-config/" class="sidebar-recent__title p1">AWS Elastic Beanstalk 환경 구성하기</a>
+        </li>
+        
+        <li class="sidebar-recent">
             <a href="/posts/aws-summit-2022-msa/" class="sidebar-recent__title p1">일체형 데이터베이스, 목적에 맞게 MSA 구조로 전환하기</a>
         </li>
         
@@ -2221,10 +2225,6 @@
         
         <li class="sidebar-recent">
             <a href="/posts/socar-ai-bootcamp-til-7/" class="sidebar-recent__title p1">CNN, Autoencoder, Upsampling, Semantic Segmentation</a>
-        </li>
-        
-        <li class="sidebar-recent">
-            <a href="/posts/socar-ai-bootcamp-til-6/" class="sidebar-recent__title p1">Convolutional Neural network</a>
         </li>
         
         <hr class="hr-fade sidebar-hr" />
@@ -2337,6 +2337,19 @@
                 <a href="/tags/autoencoder/" class="is-tags taxo__link" data-dir="ltr">
                     <span class="taxo__text">
                         Autoencoder
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        1
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/tags/aws/" class="is-tags taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        aws
                     </span>
                     <span class="taxo__num" dir="auto">
                         1
@@ -2529,6 +2542,19 @@
         
         
             <span class="tag">
+                <a href="/tags/elastic-beanstalk/" class="is-tags taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        elastic beanstalk
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        1
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
                 <a href="/tags/ensemble/" class="is-tags taxo__link" data-dir="ltr">
                     <span class="taxo__text">
                         Ensemble
@@ -2620,6 +2646,19 @@
         
         
             <span class="tag">
+                <a href="/tags/infra/" class="is-tags taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        infra
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        1
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
                 <a href="/tags/kubernetes/" class="is-tags taxo__link" data-dir="ltr">
                     <span class="taxo__text">
                         Kubernetes
@@ -2688,6 +2727,19 @@
                 <a href="/tags/mult-layer-perception/" class="is-tags taxo__link" data-dir="ltr">
                     <span class="taxo__text">
                         Mult-Layer Perception
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        1
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/tags/nginx/" class="is-tags taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        nginx
                     </span>
                     <span class="taxo__num" dir="auto">
                         1
@@ -2935,6 +2987,19 @@
                 <a href="/categories/experience/" class="is-categories taxo__link" data-dir="ltr">
                     <span class="taxo__text">
                         experience
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        1
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/categories/infra/" class="is-categories taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        infra
                     </span>
                     <span class="taxo__num" dir="auto">
                         1

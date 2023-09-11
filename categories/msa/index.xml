@@ -29,7 +29,7 @@
         <author>shinalli0102@gmail.com (shin alli)</author>
         <atom:modified>Mon, 01 May 2023 00:00:00 +0000</atom:modified>
         <guid>https://Shin0102.github.io/posts/aws-summit-2022-msa/</guid>
-        <description>들어가며 현재 회사에서 Monolothic Django로 서비스를 운영중이다. Django Admin 비동기 처리를 위한 Worker는 다른 Elastic Beanstalk 서버로 운영중이지만 같은 DB, 소스코드를 공유중인</description>
+        <description>들어가며 현재 회사에서 Monolothic Django로 서비스를 운영중이다. Django Admin, 비동기 처리를 위한 Worker 서버는 다른 Elastic Beanstalk 서버로 운영중이지만 같은 DB, 소스코드를 공유중인 상태로</description>
         
         <dc:creator>shin alli</dc:creator>
         <media:content url="https://Shin0102.github.ioimages/aws-summit-2022/aws-summit-2022.png" medium="image"><media:title type="html">featured image</media:title></media:content>
