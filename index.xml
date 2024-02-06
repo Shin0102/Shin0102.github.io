@@ -136,6 +136,48 @@
       </item>
       
       <item>
+        <title>django, 협업하기 좋은코드 만들기</title>
+        <link>https://Shin0102.github.io/posts/django-clean-code/</link>
+        <pubDate>Sun, 31 Jul 2022 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        <atom:modified>Sun, 31 Jul 2022 00:00:00 +0000</atom:modified>
+        <guid>https://Shin0102.github.io/posts/django-clean-code/</guid>
+        <description>들어가며 django로 개발하게 된지도 어느덧 5년여 되어가는 것 같다. 보통 django 와 django rest framework(DRF)을 같이 사용하여 rest api 서버를 구성하는 경우</description>
+        
+        <dc:creator>shin alli</dc:creator>
+        <media:content url="https://Shin0102.github.ioimages/django-clean-code/django.svg" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        <media:content url="https://Shin0102.github.iostatic/images/django-clean-code/django.svg" medium="image"><media:title type="html">meta image</media:title></media:content>
+        
+          
+            
+              <category>django</category>
+            
+          
+            
+              <category>clean code</category>
+            
+          
+            
+              <category>style guide</category>
+            
+          
+            
+              <category>custom exception hanlder</category>
+            
+          
+        
+        
+          
+            
+              <category>clean code</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
         <title>어떤 문제들을 AI와 딥러닝으로 해결할 수 있을까요?</title>
         <link>https://Shin0102.github.io/posts/socar-ai-bootcamp-til-8/</link>
         <pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate>
