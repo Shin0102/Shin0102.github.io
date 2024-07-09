@@ -13,12 +13,10 @@
     <language>ko</language>
     <managingEditor>shinalli0102@gmail.com (shin alli)</managingEditor>
     <webMaster>shinalli0102@gmail.com (shin alli)</webMaster>
-    <copyright>©{year}, All Rights Reserved</copyright>
+    <copyright>©2024, All Rights Reserved</copyright>
     <lastBuildDate>Tue, 31 May 2022 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://Shin0102.github.io/tags/forward-pass/index.xml" rel="self" type="application/rss+xml" />
-    
-    
     
 
       
@@ -32,9 +30,9 @@
         <description>들어가며 4주차 강의에 접어들었다. 이제까지는 주로 Machine Learning 의 대한 내용들에 대해 다루었다. 강의의 진도가 매우 빠르다. TIL과 실습과제들을 해보면서 감을 잡고있</description>
         
         <dc:creator>shin alli</dc:creator>
-        <media:content url="https://Shin0102.github.ioimages/socar-ai.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://Shin0102.github.io/images/socar-ai.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
-        <media:content url="https://Shin0102.github.iostatic/images/socar-ai.png" medium="image"><media:title type="html">meta image</media:title></media:content>
+        <media:content url="https://Shin0102.github.io/static/images/socar-ai.png" medium="image"><media:title type="html">meta image</media:title></media:content>
         
           
             

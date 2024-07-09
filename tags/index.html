@@ -651,7 +651,7 @@
 
   
     
-    var baseurl = JSON.parse("\"https://Shin0102.github.io\"");
+    var baseurl = JSON.parse("\"https://Shin0102.github.io/\"");
     
     var permalink = JSON.parse("\"https://Shin0102.github.io/tags/\"");
     
@@ -662,6 +662,12 @@
     
     
     var enableSearch = JSON.parse("true");
+    
+    var searchDistance = JSON.parse("null");
+    
+    var searchThreshold = JSON.parse("null");
+    
+    var searchContent = JSON.parse("null");
     
     var enableSearchHighlight = JSON.parse("true");
     
@@ -686,12 +692,13 @@
         xhr.onload = function () {
           if (xhr.status === 200) {
             fuse = new Fuse(JSON.parse(xhr.response.toString('utf-8')), {
-              keys: sectionType.includes('publication') ? ['title', 'abstract'] : ['title', 'description', 'content'],
+              keys: sectionType.includes('publication') ? ['title', 'abstract'] : 
+                searchContent ? ['title', 'description', 'content'] : ['title', 'description'],
               includeMatches: enableSearchHighlight,
               shouldSort: true, 
-              threshold: 0.4, 
+              threshold: searchThreshold ? searchThreshold : 0.4, 
               location: 0, 
-              distance: 100, 
+              distance: searchDistance ? searchDistance : 100, 
               maxPatternLength: 32,
               minMatchCharLength: 1,
               isCaseSensitive: false, 
@@ -715,7 +722,7 @@
       var a = document.createElement('a');
       a.innerHTML = obj.item.title;
       a.setAttribute('class', 'search-result__item--title');
-      a.setAttribute('href', obj.item.permalink);
+      a.setAttribute('href', obj.item.uri);
 
       var descDiv = document.createElement('div');
       descDiv.setAttribute('class', 'search-result__item--desc');
@@ -1315,7 +1322,8 @@
     }
   
   });
-</script>    
+</script>
+    
     
 
 
@@ -1331,7 +1339,7 @@
 
 
     
-<link rel="alternate" type="application/rss&#43;xml" title="RSS" href="https://Shin0102.github.io/tags/index.xml">
+<link rel="alternate" type="application/rss&#43;xml" title="rss" href="https://Shin0102.github.io/tags/index.xml">
 
 <meta name="description" content="신알리의 블로그" />
 
@@ -1349,7 +1357,7 @@
 <meta property="og:type" content="website">
 <meta property="og:description" content="신알리의 블로그">
 
-<meta name="generator" content="Hugo 0.101.0" />
+<meta name="generator" content="Hugo 0.127.0">
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -1389,12 +1397,12 @@
     "description": "신알리의 블로그",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://Shin0102.github.io"
+      "@id": "https://Shin0102.github.io/"
     },
     "publisher": {
       "@type": "Organization",
       "name": "Alli's blog",
-      "url": "https://Shin0102.github.io"
+      "url": "https://Shin0102.github.io/"
     }
   }
 </script>
@@ -1402,6 +1410,8 @@
     
   
   
+
+
 
 
 
@@ -1651,7 +1661,7 @@
     
       <a href="/tags/argocd/" class="terms__item is-small">
         <span class="terms__tags">
-          argocd
+          Argocd
         </span>
         <span class="terms__len">(1)</span>
       </a>
@@ -1678,7 +1688,7 @@
     
       <a href="/tags/aws/" class="terms__item is-small">
         <span class="terms__tags">
-          aws
+          Aws
         </span>
         <span class="terms__len">(1)</span>
       </a>
@@ -1687,7 +1697,7 @@
     
       <a href="/tags/aws-activate/" class="terms__item is-small">
         <span class="terms__tags">
-          AWS activate
+          AWS Activate
         </span>
         <span class="terms__len">(1)</span>
       </a>
@@ -1696,7 +1706,25 @@
     
       <a href="/tags/aws-eks/" class="terms__item is-small">
         <span class="terms__tags">
-          aws eks
+          Aws Eks
+        </span>
+        <span class="terms__len">(1)</span>
+      </a>
+    
+    
+    
+      <a href="/tags/aws-lambda/" class="terms__item is-small">
+        <span class="terms__tags">
+          Aws Lambda
+        </span>
+        <span class="terms__len">(1)</span>
+      </a>
+    
+    
+    
+      <a href="/tags/aws-sam/" class="terms__item is-small">
+        <span class="terms__tags">
+          Aws Sam
         </span>
         <span class="terms__len">(1)</span>
       </a>
@@ -1705,7 +1733,7 @@
     
       <a href="/tags/aws-summit/" class="terms__item is-small">
         <span class="terms__tags">
-          aws summit
+          Aws Summit
         </span>
         <span class="terms__len">(1)</span>
       </a>
@@ -1732,7 +1760,7 @@
     
       <a href="/tags/cdk/" class="terms__item is-small">
         <span class="terms__tags">
-          cdk
+          Cdk
         </span>
         <span class="terms__len">(1)</span>
       </a>
@@ -1741,7 +1769,7 @@
     
       <a href="/tags/clean-code/" class="terms__item is-small">
         <span class="terms__tags">
-          clean code
+          Clean Code
         </span>
         <span class="terms__len">(1)</span>
       </a>
@@ -1777,7 +1805,7 @@
     
       <a href="/tags/convolutional-neural-network/" class="terms__item is-small">
         <span class="terms__tags">
-          Convolutional Neural network
+          Convolutional Neural Network
         </span>
         <span class="terms__len">(1)</span>
       </a>
@@ -1786,7 +1814,7 @@
     
       <a href="/tags/custom-exception-hanlder/" class="terms__item is-small">
         <span class="terms__tags">
-          custom exception hanlder
+          Custom Exception Hanlder
         </span>
         <span class="terms__len">(1)</span>
       </a>
@@ -1795,7 +1823,7 @@
     
       <a href="/tags/database/" class="terms__item is-small">
         <span class="terms__tags">
-          database
+          Database
         </span>
         <span class="terms__len">(1)</span>
       </a>
@@ -1831,7 +1859,7 @@
     
       <a href="/tags/django/" class="terms__item is-small">
         <span class="terms__tags">
-          django
+          Django
         </span>
         <span class="terms__len">(1)</span>
       </a>
@@ -1840,7 +1868,7 @@
     
       <a href="/tags/elastic-beanstalk/" class="terms__item is-small">
         <span class="terms__tags">
-          elastic beanstalk
+          Elastic Beanstalk
         </span>
         <span class="terms__len">(1)</span>
       </a>
@@ -1885,7 +1913,7 @@
     
       <a href="/tags/github-action/" class="terms__item is-small">
         <span class="terms__tags">
-          github action
+          Github Action
         </span>
         <span class="terms__len">(1)</span>
       </a>
@@ -1901,9 +1929,18 @@
     
     
     
+      <a href="/tags/iac/" class="terms__item is-small">
+        <span class="terms__tags">
+          Iac
+        </span>
+        <span class="terms__len">(1)</span>
+      </a>
+    
+    
+    
       <a href="/tags/iam/" class="terms__item is-small">
         <span class="terms__tags">
-          iam
+          Iam
         </span>
         <span class="terms__len">(1)</span>
       </a>
@@ -1912,7 +1949,7 @@
     
       <a href="/tags/infra/" class="terms__item is-small">
         <span class="terms__tags">
-          infra
+          Infra
         </span>
         <span class="terms__len">(1)</span>
       </a>
@@ -1922,6 +1959,15 @@
       <a href="/tags/kubernetes/" class="terms__item is-small">
         <span class="terms__tags">
           Kubernetes
+        </span>
+        <span class="terms__len">(1)</span>
+      </a>
+    
+    
+    
+      <a href="/tags/lambda-environments/" class="terms__item is-small">
+        <span class="terms__tags">
+          Lambda Environments
         </span>
         <span class="terms__len">(1)</span>
       </a>
@@ -1957,7 +2003,7 @@
     
       <a href="/tags/msa/" class="terms__item is-small">
         <span class="terms__tags">
-          msa
+          MSA
         </span>
         <span class="terms__len">(2)</span>
       </a>
@@ -1975,7 +2021,7 @@
     
       <a href="/tags/nginx/" class="terms__item is-small">
         <span class="terms__tags">
-          nginx
+          Nginx
         </span>
         <span class="terms__len">(1)</span>
       </a>
@@ -1991,9 +2037,9 @@
     
     
     
-      <a href="/tags/padding-stride-feature-map%EC%9D%98-%ED%81%AC%EA%B8%B0/" class="terms__item is-small">
+      <a href="/tags/padding-stride---feature-map%EC%9D%98-%ED%81%AC%EA%B8%B0/" class="terms__item is-small">
         <span class="terms__tags">
-          Padding, Stride - Feature map의 크기
+          Padding, Stride - Feature Map의 크기
         </span>
         <span class="terms__len">(1)</span>
       </a>
@@ -2020,7 +2066,7 @@
     
       <a href="/tags/role/" class="terms__item is-small">
         <span class="terms__tags">
-          role
+          Role
         </span>
         <span class="terms__len">(1)</span>
       </a>
@@ -2029,7 +2075,7 @@
     
       <a href="/tags/self-supervised-learning/" class="terms__item is-small">
         <span class="terms__tags">
-          Self-supervised Learning
+          Self-Supervised Learning
         </span>
         <span class="terms__len">(1)</span>
       </a>
@@ -2045,9 +2091,18 @@
     
     
     
+      <a href="/tags/serverless/" class="terms__item is-small">
+        <span class="terms__tags">
+          Serverless
+        </span>
+        <span class="terms__len">(1)</span>
+      </a>
+    
+    
+    
       <a href="/tags/style-guide/" class="terms__item is-small">
         <span class="terms__tags">
-          style guide
+          Style Guide
         </span>
         <span class="terms__len">(1)</span>
       </a>
@@ -2110,7 +2165,7 @@
     
       <a href="/tags/zzo-theme/" class="terms__item is-small">
         <span class="terms__tags">
-          zzo theme
+          Zzo Theme
         </span>
         <span class="terms__len">(1)</span>
       </a>

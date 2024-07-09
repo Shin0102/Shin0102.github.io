@@ -13,12 +13,10 @@
     <language>ko</language>
     <managingEditor>shinalli0102@gmail.com (shin alli)</managingEditor>
     <webMaster>shinalli0102@gmail.com (shin alli)</webMaster>
-    <copyright>©{year}, All Rights Reserved</copyright>
+    <copyright>©2024, All Rights Reserved</copyright>
     <lastBuildDate>Wed, 01 Feb 2023 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://Shin0102.github.io/categories/%ED%9A%8C%EA%B3%A0/index.xml" rel="self" type="application/rss+xml" />
-    
-    
     
 
       
@@ -32,9 +30,9 @@
         <description>들어가며 어느덧 2023년 1달이 지났다. 연초에 위염+장염이 심하게 걸리는 바람에 회고를 뒤늦게 쓰게 되었다. 개인적으로 2017년 부터 노션에 새해 목표를 정</description>
         
         <dc:creator>shin alli</dc:creator>
-        <media:content url="https://Shin0102.github.ioimages/retrospect-2022/2022.jpg" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://Shin0102.github.io/images/retrospect-2022/2022.jpg" medium="image"><media:title type="html">featured image</media:title></media:content>
         
-        <media:content url="https://Shin0102.github.iostatic/images/retrospect-2022/2022.jpg" medium="image"><media:title type="html">meta image</media:title></media:content>
+        <media:content url="https://Shin0102.github.io/static/images/retrospect-2022/2022.jpg" medium="image"><media:title type="html">meta image</media:title></media:content>
         
           
             

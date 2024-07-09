@@ -651,7 +651,7 @@
 
   
     
-    var baseurl = JSON.parse("\"https://Shin0102.github.io\"");
+    var baseurl = JSON.parse("\"https://Shin0102.github.io/\"");
     
     var permalink = JSON.parse("\"https://Shin0102.github.io/posts/socar-ai-bootcamp-til-5/\"");
     
@@ -662,6 +662,12 @@
     
     
     var enableSearch = JSON.parse("true");
+    
+    var searchDistance = JSON.parse("null");
+    
+    var searchThreshold = JSON.parse("null");
+    
+    var searchContent = JSON.parse("null");
     
     var enableSearchHighlight = JSON.parse("true");
     
@@ -686,12 +692,13 @@
         xhr.onload = function () {
           if (xhr.status === 200) {
             fuse = new Fuse(JSON.parse(xhr.response.toString('utf-8')), {
-              keys: sectionType.includes('publication') ? ['title', 'abstract'] : ['title', 'description', 'content'],
+              keys: sectionType.includes('publication') ? ['title', 'abstract'] : 
+                searchContent ? ['title', 'description', 'content'] : ['title', 'description'],
               includeMatches: enableSearchHighlight,
               shouldSort: true, 
-              threshold: 0.4, 
+              threshold: searchThreshold ? searchThreshold : 0.4, 
               location: 0, 
-              distance: 100, 
+              distance: searchDistance ? searchDistance : 100, 
               maxPatternLength: 32,
               minMatchCharLength: 1,
               isCaseSensitive: false, 
@@ -715,7 +722,7 @@
       var a = document.createElement('a');
       a.innerHTML = obj.item.title;
       a.setAttribute('class', 'search-result__item--title');
-      a.setAttribute('href', obj.item.permalink);
+      a.setAttribute('href', obj.item.uri);
 
       var descDiv = document.createElement('div');
       descDiv.setAttribute('class', 'search-result__item--desc');
@@ -1315,7 +1322,8 @@
     }
   
   });
-</script>    
+</script>
+    
     
 
 
@@ -1358,7 +1366,7 @@
     <meta property="twitter:description" content="">
   
 
-<meta name="generator" content="Hugo 0.101.0" />
+<meta name="generator" content="Hugo 0.127.0">
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -1402,12 +1410,12 @@
     "image" : "https://Shin0102.github.io/images/socar-ai.png",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://Shin0102.github.io"
+      "@id": "https://Shin0102.github.io/"
     },
     "publisher": {
       "@type": "Organization",
       "name": "Alli's blog",
-      "url": "https://Shin0102.github.io"
+      "url": "https://Shin0102.github.io/"
     }
   }
 </script>
@@ -1415,6 +1423,8 @@
     
   
   
+
+
 
 
 
@@ -2122,6 +2132,7 @@
   
 </script>
     
+
     
     
 <div class="whoami__gutter"></div>
@@ -2146,7 +2157,7 @@
     </div>
     <div class="whoami__desc">
       
-        Backend 개발자 (python, django, aws) 
+        Backend 개발자 (Python, Django, AWS) 
       
     </div>
     <div class="whoami__social">
@@ -2359,7 +2370,7 @@
 </div>
 
 
-<script defer src="/js/swipe.min.9d61b979db5cc2a1ff3a5d410e881547a61b9d28bc23e811c49061d47df07ef3.js"></script>
+<script defer src="/js/swipe.min.feb438efb7ca009ecd7fc2ac3ad2fced4840990b2798d81f87137f2dc6281f05.js"></script>
 
 <script defer src="/js/micromodal.min.de01b44b2f383056bbcaf6ee921fd385d79108ec1129afd0eb2f3f5a07e11f45.js"></script>
 
@@ -2764,6 +2775,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <script defer src="/js/helper/fadeinout.min.js"></script>
 
+<script defer src="/js/helper/throttle.min.js"></script>
+
+
 
 
 
@@ -2979,6 +2993,23 @@ document.addEventListener('DOMContentLoaded', function () {
       }) : null;
     }
     
+    
+    
+    
+    
+    var topOffset = 120;
+    var botOffset = 70;
+    var handleWindowResize = function () {
+      if (tocElem) {
+        tocElem.style.maxHeight = (window.innerHeight - topOffset - botOffset) + 'px';
+      }
+    }
+    var throttledWindowResize = throttle(handleWindowResize, 300);
+    throttledWindowResize()
+
+    
+    window.addEventListener('resize', throttledWindowResize);
+    
 
 
 
@@ -2997,7 +3028,7 @@ document.addEventListener('DOMContentLoaded', function () {
       var newElemOuter = document.createElement('span');
       newElemOuter.classList.add('anchor');
       newElemOuter.classList.add('hide');
-      newElemOuter.setAttribute('data-clipboard-text', link);
+      newElemOuter.setAttribute('data-clipboard-text', decodeURI(link));
       newElemOuter.style.position = 'relative';
 
       var newElemInner = document.createElement('span');
@@ -3040,7 +3071,7 @@ document.addEventListener('DOMContentLoaded', function () {
       e.trigger.classList.add('tooltipped');
       e.trigger.classList.add('tooltipped-s');
     });
-    // =================================================================
+    
 
 
 

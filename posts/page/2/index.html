@@ -651,7 +651,7 @@
 
   
     
-    var baseurl = JSON.parse("\"https://Shin0102.github.io\"");
+    var baseurl = JSON.parse("\"https://Shin0102.github.io/\"");
     
     var permalink = JSON.parse("\"https://Shin0102.github.io/posts/\"");
     
@@ -662,6 +662,12 @@
     
     
     var enableSearch = JSON.parse("true");
+    
+    var searchDistance = JSON.parse("null");
+    
+    var searchThreshold = JSON.parse("null");
+    
+    var searchContent = JSON.parse("null");
     
     var enableSearchHighlight = JSON.parse("true");
     
@@ -686,12 +692,13 @@
         xhr.onload = function () {
           if (xhr.status === 200) {
             fuse = new Fuse(JSON.parse(xhr.response.toString('utf-8')), {
-              keys: sectionType.includes('publication') ? ['title', 'abstract'] : ['title', 'description', 'content'],
+              keys: sectionType.includes('publication') ? ['title', 'abstract'] : 
+                searchContent ? ['title', 'description', 'content'] : ['title', 'description'],
               includeMatches: enableSearchHighlight,
               shouldSort: true, 
-              threshold: 0.4, 
+              threshold: searchThreshold ? searchThreshold : 0.4, 
               location: 0, 
-              distance: 100, 
+              distance: searchDistance ? searchDistance : 100, 
               maxPatternLength: 32,
               minMatchCharLength: 1,
               isCaseSensitive: false, 
@@ -715,7 +722,7 @@
       var a = document.createElement('a');
       a.innerHTML = obj.item.title;
       a.setAttribute('class', 'search-result__item--title');
-      a.setAttribute('href', obj.item.permalink);
+      a.setAttribute('href', obj.item.uri);
 
       var descDiv = document.createElement('div');
       descDiv.setAttribute('class', 'search-result__item--desc');
@@ -1315,7 +1322,8 @@
     }
   
   });
-</script>    
+</script>
+    
     
 
 
@@ -1331,7 +1339,7 @@
 
 
     
-<link rel="alternate" type="application/rss&#43;xml" title="RSS" href="https://Shin0102.github.io/posts/index.xml">
+<link rel="alternate" type="application/rss&#43;xml" title="rss" href="https://Shin0102.github.io/posts/index.xml">
 
 <meta name="description" content="신알리의 블로그" />
 
@@ -1349,7 +1357,7 @@
 <meta property="og:type" content="website">
 <meta property="og:description" content="신알리의 블로그">
 
-<meta name="generator" content="Hugo 0.101.0" />
+<meta name="generator" content="Hugo 0.127.0">
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -1389,12 +1397,12 @@
     "description": "신알리의 블로그",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://Shin0102.github.io"
+      "@id": "https://Shin0102.github.io/"
     },
     "publisher": {
       "@type": "Organization",
       "name": "Alli's blog",
-      "url": "https://Shin0102.github.io"
+      "url": "https://Shin0102.github.io/"
     }
   }
 </script>
@@ -1402,6 +1410,8 @@
     
   
   
+
+
 
 
 
@@ -1639,6 +1649,45 @@
 
     
     <div class="summary-classic__image-container summary-classic__image-wrapper" data-position="right" data-hwm="">
+      <a href="https://Shin0102.github.io/posts/indie-developer/">
+        <img data-src="/images/indie-developer.png" alt="1인 개발로 서비스 런칭하며..." src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload summary-classic__image" data-ani="true" data-hwm="" style=""/>
+      </a>
+    </div>
+    
+
+    <div class="summary-classic__content">
+      <header>
+        <h5 class="title h5"><a href='https://Shin0102.github.io/posts/indie-developer/'>1인 개발로 서비스 런칭하며...</a> </h5>
+        <h6 class="subtitle caption">
+          <time title="작성일" dir="ltr">📅&nbsp;2021년 12월 13일 </time>
+          
+          <span title="읽는 시간" dir="ltr"> &middot; ☕&nbsp;4&nbsp;min read </span>
+          
+        </h6>
+      </header>
+      <div>
+        <div class="summary-classic__text p2">
+          
+            들어가며 3년 넘게 다니던 회사를 그만두게 되고, 타이밍 좋게? 지인소개로 새로 런칭하는 서비스(재능기부 플랫폼)의 백엔드 개발에 참여하게 되었다. 레거시 없이
+          
+        </div>
+      </div>
+    </div>
+
+    
+    
+  </div>
+  <hr />
+</article>
+
+
+            
+                
+  <article class="summary-classic" data-ani="true">
+  <div class="summary-classic__flex-box" >
+
+    
+    <div class="summary-classic__image-container summary-classic__image-wrapper" data-position="right" data-hwm="">
       <a href="https://Shin0102.github.io/posts/devops-msa-considerations/">
         <img data-src="/images/msa.png" alt="MSA 설계시 고려해야될 점과 Pattern" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload summary-classic__image" data-ani="true" data-hwm="" style=""/>
       </a>
@@ -1863,11 +1912,11 @@
         </li>
         
         <li class="sidebar-recent">
-            <a href="/posts/django-clean-code/" class="sidebar-recent__title p1">django, 협업하기 좋은코드 만들기</a>
+            <a href="/posts/aws-lambda-with-sam/" class="sidebar-recent__title p1">AWS Lambda with SAM</a>
         </li>
         
         <li class="sidebar-recent">
-            <a href="/posts/socar-ai-bootcamp-til-8/" class="sidebar-recent__title p1">어떤 문제들을 AI와 딥러닝으로 해결할 수 있을까요?</a>
+            <a href="/posts/django-clean-code/" class="sidebar-recent__title p1">django, 협업하기 좋은코드 만들기</a>
         </li>
         
         <hr class="hr-fade sidebar-hr" />
@@ -1953,7 +2002,7 @@
             <span class="tag">
                 <a href="/tags/argocd/" class="is-tags taxo__link" data-dir="ltr">
                     <span class="taxo__text">
-                        argocd
+                        Argocd
                     </span>
                     <span class="taxo__num" dir="auto">
                         1
@@ -1992,7 +2041,7 @@
             <span class="tag">
                 <a href="/tags/aws/" class="is-tags taxo__link" data-dir="ltr">
                     <span class="taxo__text">
-                        aws
+                        Aws
                     </span>
                     <span class="taxo__num" dir="auto">
                         1
@@ -2005,7 +2054,7 @@
             <span class="tag">
                 <a href="/tags/aws-activate/" class="is-tags taxo__link" data-dir="ltr">
                     <span class="taxo__text">
-                        AWS activate
+                        AWS Activate
                     </span>
                     <span class="taxo__num" dir="auto">
                         1
@@ -2018,7 +2067,33 @@
             <span class="tag">
                 <a href="/tags/aws-eks/" class="is-tags taxo__link" data-dir="ltr">
                     <span class="taxo__text">
-                        aws eks
+                        Aws Eks
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        1
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/tags/aws-lambda/" class="is-tags taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        Aws Lambda
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        1
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/tags/aws-sam/" class="is-tags taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        Aws Sam
                     </span>
                     <span class="taxo__num" dir="auto">
                         1
@@ -2031,7 +2106,7 @@
             <span class="tag">
                 <a href="/tags/aws-summit/" class="is-tags taxo__link" data-dir="ltr">
                     <span class="taxo__text">
-                        aws summit
+                        Aws Summit
                     </span>
                     <span class="taxo__num" dir="auto">
                         1
@@ -2070,7 +2145,7 @@
             <span class="tag">
                 <a href="/tags/cdk/" class="is-tags taxo__link" data-dir="ltr">
                     <span class="taxo__text">
-                        cdk
+                        Cdk
                     </span>
                     <span class="taxo__num" dir="auto">
                         1
@@ -2083,7 +2158,7 @@
             <span class="tag">
                 <a href="/tags/clean-code/" class="is-tags taxo__link" data-dir="ltr">
                     <span class="taxo__text">
-                        clean code
+                        Clean Code
                     </span>
                     <span class="taxo__num" dir="auto">
                         1
@@ -2135,7 +2210,7 @@
             <span class="tag">
                 <a href="/tags/convolutional-neural-network/" class="is-tags taxo__link" data-dir="ltr">
                     <span class="taxo__text">
-                        Convolutional Neural network
+                        Convolutional Neural Network
                     </span>
                     <span class="taxo__num" dir="auto">
                         1
@@ -2148,7 +2223,7 @@
             <span class="tag">
                 <a href="/tags/custom-exception-hanlder/" class="is-tags taxo__link" data-dir="ltr">
                     <span class="taxo__text">
-                        custom exception hanlder
+                        Custom Exception Hanlder
                     </span>
                     <span class="taxo__num" dir="auto">
                         1
@@ -2161,7 +2236,7 @@
             <span class="tag">
                 <a href="/tags/database/" class="is-tags taxo__link" data-dir="ltr">
                     <span class="taxo__text">
-                        database
+                        Database
                     </span>
                     <span class="taxo__num" dir="auto">
                         1
@@ -2213,7 +2288,7 @@
             <span class="tag">
                 <a href="/tags/django/" class="is-tags taxo__link" data-dir="ltr">
                     <span class="taxo__text">
-                        django
+                        Django
                     </span>
                     <span class="taxo__num" dir="auto">
                         1
@@ -2226,7 +2301,7 @@
             <span class="tag">
                 <a href="/tags/elastic-beanstalk/" class="is-tags taxo__link" data-dir="ltr">
                     <span class="taxo__text">
-                        elastic beanstalk
+                        Elastic Beanstalk
                     </span>
                     <span class="taxo__num" dir="auto">
                         1
@@ -2291,7 +2366,7 @@
             <span class="tag">
                 <a href="/tags/github-action/" class="is-tags taxo__link" data-dir="ltr">
                     <span class="taxo__text">
-                        github action
+                        Github Action
                     </span>
                     <span class="taxo__num" dir="auto">
                         1
@@ -2315,9 +2390,22 @@
         
         
             <span class="tag">
+                <a href="/tags/iac/" class="is-tags taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        Iac
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        1
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
                 <a href="/tags/iam/" class="is-tags taxo__link" data-dir="ltr">
                     <span class="taxo__text">
-                        iam
+                        Iam
                     </span>
                     <span class="taxo__num" dir="auto">
                         1
@@ -2330,7 +2418,7 @@
             <span class="tag">
                 <a href="/tags/infra/" class="is-tags taxo__link" data-dir="ltr">
                     <span class="taxo__text">
-                        infra
+                        Infra
                     </span>
                     <span class="taxo__num" dir="auto">
                         1
@@ -2344,6 +2432,19 @@
                 <a href="/tags/kubernetes/" class="is-tags taxo__link" data-dir="ltr">
                     <span class="taxo__text">
                         Kubernetes
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        1
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/tags/lambda-environments/" class="is-tags taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        Lambda Environments
                     </span>
                     <span class="taxo__num" dir="auto">
                         1
@@ -2395,7 +2496,7 @@
             <span class="tag">
                 <a href="/tags/msa/" class="is-tags taxo__link" data-dir="ltr">
                     <span class="taxo__text">
-                        msa
+                        MSA
                     </span>
                     <span class="taxo__num" dir="auto">
                         2
@@ -2421,7 +2522,7 @@
             <span class="tag">
                 <a href="/tags/nginx/" class="is-tags taxo__link" data-dir="ltr">
                     <span class="taxo__text">
-                        nginx
+                        Nginx
                     </span>
                     <span class="taxo__num" dir="auto">
                         1
@@ -2445,9 +2546,9 @@
         
         
             <span class="tag">
-                <a href="/tags/padding-stride-feature-map%EC%9D%98-%ED%81%AC%EA%B8%B0/" class="is-tags taxo__link" data-dir="ltr">
+                <a href="/tags/padding-stride---feature-map%EC%9D%98-%ED%81%AC%EA%B8%B0/" class="is-tags taxo__link" data-dir="ltr">
                     <span class="taxo__text">
-                        Padding, Stride - Feature map의 크기
+                        Padding, Stride - Feature Map의 크기
                     </span>
                     <span class="taxo__num" dir="auto">
                         1
@@ -2486,7 +2587,7 @@
             <span class="tag">
                 <a href="/tags/role/" class="is-tags taxo__link" data-dir="ltr">
                     <span class="taxo__text">
-                        role
+                        Role
                     </span>
                     <span class="taxo__num" dir="auto">
                         1
@@ -2499,7 +2600,7 @@
             <span class="tag">
                 <a href="/tags/self-supervised-learning/" class="is-tags taxo__link" data-dir="ltr">
                     <span class="taxo__text">
-                        Self-supervised Learning
+                        Self-Supervised Learning
                     </span>
                     <span class="taxo__num" dir="auto">
                         1
@@ -2523,9 +2624,22 @@
         
         
             <span class="tag">
+                <a href="/tags/serverless/" class="is-tags taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        Serverless
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        1
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
                 <a href="/tags/style-guide/" class="is-tags taxo__link" data-dir="ltr">
                     <span class="taxo__text">
-                        style guide
+                        Style Guide
                     </span>
                     <span class="taxo__num" dir="auto">
                         1
@@ -2616,7 +2730,7 @@
             <span class="tag">
                 <a href="/tags/zzo-theme/" class="is-tags taxo__link" data-dir="ltr">
                     <span class="taxo__text">
-                        zzo theme
+                        Zzo Theme
                     </span>
                     <span class="taxo__num" dir="auto">
                         1
@@ -2655,7 +2769,7 @@
             <span class="tag">
                 <a href="/categories/clean-code/" class="is-categories taxo__link" data-dir="ltr">
                     <span class="taxo__text">
-                        clean code
+                        Clean Code
                     </span>
                     <span class="taxo__num" dir="auto">
                         1
@@ -2668,7 +2782,7 @@
             <span class="tag">
                 <a href="/categories/devops/" class="is-categories taxo__link" data-dir="ltr">
                     <span class="taxo__text">
-                        devops
+                        Devops
                     </span>
                     <span class="taxo__num" dir="auto">
                         3
@@ -2681,7 +2795,7 @@
             <span class="tag">
                 <a href="/categories/etc/" class="is-categories taxo__link" data-dir="ltr">
                     <span class="taxo__text">
-                        etc
+                        Etc
                     </span>
                     <span class="taxo__num" dir="auto">
                         1
@@ -2694,7 +2808,7 @@
             <span class="tag">
                 <a href="/categories/experience/" class="is-categories taxo__link" data-dir="ltr">
                     <span class="taxo__text">
-                        experience
+                        Experience
                     </span>
                     <span class="taxo__num" dir="auto">
                         1
@@ -2707,10 +2821,10 @@
             <span class="tag">
                 <a href="/categories/infra/" class="is-categories taxo__link" data-dir="ltr">
                     <span class="taxo__text">
-                        infra
+                        Infra
                     </span>
                     <span class="taxo__num" dir="auto">
-                        1
+                        2
                     </span>
                 </a>
             </span>
@@ -2720,7 +2834,7 @@
             <span class="tag">
                 <a href="/categories/msa/" class="is-categories taxo__link" data-dir="ltr">
                     <span class="taxo__text">
-                        msa
+                        Msa
                     </span>
                     <span class="taxo__num" dir="auto">
                         1

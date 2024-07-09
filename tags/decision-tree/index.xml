@@ -13,12 +13,10 @@
     <language>ko</language>
     <managingEditor>shinalli0102@gmail.com (shin alli)</managingEditor>
     <webMaster>shinalli0102@gmail.com (shin alli)</webMaster>
-    <copyright>©{year}, All Rights Reserved</copyright>
+    <copyright>©2024, All Rights Reserved</copyright>
     <lastBuildDate>Wed, 18 May 2022 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://Shin0102.github.io/tags/decision-tree/index.xml" rel="self" type="application/rss+xml" />
-    
-    
     
 
       
@@ -32,9 +30,9 @@
         <description>들어가며 2주차 강의에 접어들었다. 이번 강의는 Machine Learning중 output이 주어지는 Supervised Learning에 대해서, 그리고 기본이 되는 Linear Model</description>
         
         <dc:creator>shin alli</dc:creator>
-        <media:content url="https://Shin0102.github.ioimages/socar-ai.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://Shin0102.github.io/images/socar-ai.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
-        <media:content url="https://Shin0102.github.iostatic/images/socar-ai.png" medium="image"><media:title type="html">meta image</media:title></media:content>
+        <media:content url="https://Shin0102.github.io/static/images/socar-ai.png" medium="image"><media:title type="html">meta image</media:title></media:content>
         
           
             

@@ -651,7 +651,7 @@
 
   
     
-    var baseurl = JSON.parse("\"https://Shin0102.github.io\"");
+    var baseurl = JSON.parse("\"https://Shin0102.github.io/\"");
     
     var permalink = JSON.parse("\"https://Shin0102.github.io/about/\"");
     
@@ -662,6 +662,12 @@
     
     
     var enableSearch = JSON.parse("true");
+    
+    var searchDistance = JSON.parse("null");
+    
+    var searchThreshold = JSON.parse("null");
+    
+    var searchContent = JSON.parse("null");
     
     var enableSearchHighlight = JSON.parse("true");
     
@@ -686,12 +692,13 @@
         xhr.onload = function () {
           if (xhr.status === 200) {
             fuse = new Fuse(JSON.parse(xhr.response.toString('utf-8')), {
-              keys: sectionType.includes('publication') ? ['title', 'abstract'] : ['title', 'description', 'content'],
+              keys: sectionType.includes('publication') ? ['title', 'abstract'] : 
+                searchContent ? ['title', 'description', 'content'] : ['title', 'description'],
               includeMatches: enableSearchHighlight,
               shouldSort: true, 
-              threshold: 0.4, 
+              threshold: searchThreshold ? searchThreshold : 0.4, 
               location: 0, 
-              distance: 100, 
+              distance: searchDistance ? searchDistance : 100, 
               maxPatternLength: 32,
               minMatchCharLength: 1,
               isCaseSensitive: false, 
@@ -715,7 +722,7 @@
       var a = document.createElement('a');
       a.innerHTML = obj.item.title;
       a.setAttribute('class', 'search-result__item--title');
-      a.setAttribute('href', obj.item.permalink);
+      a.setAttribute('href', obj.item.uri);
 
       var descDiv = document.createElement('div');
       descDiv.setAttribute('class', 'search-result__item--desc');
@@ -1315,7 +1322,8 @@
     }
   
   });
-</script>    
+</script>
+    
     
 
 
@@ -1356,7 +1364,7 @@
     <meta property="twitter:description" content="Alli about page">
   
 
-<meta name="generator" content="Hugo 0.101.0" />
+<meta name="generator" content="Hugo 0.127.0">
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -1399,12 +1407,12 @@
     "image" : "https://Shin0102.github.io/images/whoami/avatar.png",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://Shin0102.github.io"
+      "@id": "https://Shin0102.github.io/"
     },
     "publisher": {
       "@type": "Organization",
       "name": "Alli's blog",
-      "url": "https://Shin0102.github.io"
+      "url": "https://Shin0102.github.io/"
     }
   }
 </script>
@@ -1412,6 +1420,8 @@
     
   
   
+
+
 
 
 
@@ -1628,10 +1638,11 @@
 <center>
 <h2 id="experience">Experience</h2>
 <p>Python(Django, FastAPI, Flask) Backend Developer<br />
-AWS, EKS, Serverless Devops<br />
-Migration legacy services to microservices</p>
+AWS Devops<br />
+Migration legacy services to microservices<br />
+Launch of new service with full stack</p>
 <h2 id="interst">Interst</h2>
-<p>Full stack Developer(Learning React)<br />
+<p>Full stack Developer(Learning react, flutter)<br />
 Deep dive devops<br />
 Rust</p>
 </center>

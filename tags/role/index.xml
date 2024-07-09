@@ -6,19 +6,17 @@
   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>role on Alli&#39;s blog</title>
+    <title>Role on Alli&#39;s blog</title>
     <link>https://Shin0102.github.io/tags/role/</link>
-    <description>Recent content in role on Alli&#39;s blog</description>
+    <description>Recent content in Role on Alli&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
     <managingEditor>shinalli0102@gmail.com (shin alli)</managingEditor>
     <webMaster>shinalli0102@gmail.com (shin alli)</webMaster>
-    <copyright>©{year}, All Rights Reserved</copyright>
+    <copyright>©2024, All Rights Reserved</copyright>
     <lastBuildDate>Sat, 19 Dec 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://Shin0102.github.io/tags/role/index.xml" rel="self" type="application/rss+xml" />
-    
-    
     
 
       
@@ -32,9 +30,9 @@
         <description>MSA(microservice architecture)를 위해 CDK(typescript)를 통해 EKS를 구성한 적이 있는데, 이때는 동작에만 집중하다 보니, 자동으로 생성되는</description>
         
         <dc:creator>shin alli</dc:creator>
-        <media:content url="https://Shin0102.github.ioimages/aws-eks.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://Shin0102.github.io/images/aws-eks.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
-        <media:content url="https://Shin0102.github.iostatic/images/aws-eks.png" medium="image"><media:title type="html">meta image</media:title></media:content>
+        <media:content url="https://Shin0102.github.io/static/images/aws-eks.png" medium="image"><media:title type="html">meta image</media:title></media:content>
         
           
             

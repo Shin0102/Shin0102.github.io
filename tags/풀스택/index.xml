@@ -13,12 +13,10 @@
     <language>ko</language>
     <managingEditor>shinalli0102@gmail.com (shin alli)</managingEditor>
     <webMaster>shinalli0102@gmail.com (shin alli)</webMaster>
-    <copyright>©{year}, All Rights Reserved</copyright>
+    <copyright>©2024, All Rights Reserved</copyright>
     <lastBuildDate>Mon, 13 Dec 2021 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://Shin0102.github.io/tags/%ED%92%80%EC%8A%A4%ED%83%9D/index.xml" rel="self" type="application/rss+xml" />
-    
-    
     
 
       
@@ -32,9 +30,9 @@
         <description>들어가며 3년 넘게 다니던 회사를 그만두게 되고, 타이밍 좋게? 지인소개로 새로 런칭하는 서비스(재능기부 플랫폼)의 백엔드 개발에 참여하게 되었다. 레거시 없이</description>
         
         <dc:creator>shin alli</dc:creator>
-        <media:content url="https://Shin0102.github.ioimages/indie-developer.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://Shin0102.github.io/images/indie-developer.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
-        <media:content url="https://Shin0102.github.iostatic/images/indie-developer.png" medium="image"><media:title type="html">meta image</media:title></media:content>
+        <media:content url="https://Shin0102.github.io/static/images/indie-developer.png" medium="image"><media:title type="html">meta image</media:title></media:content>
         
           
             
