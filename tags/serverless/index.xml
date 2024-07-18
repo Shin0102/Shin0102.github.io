@@ -6,9 +6,9 @@
   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>Serverless on Alli&#39;s blog</title>
+    <title>serverless on Alli&#39;s blog</title>
     <link>https://Shin0102.github.io/tags/serverless/</link>
-    <description>Recent content in Serverless on Alli&#39;s blog</description>
+    <description>Recent content in serverless on Alli&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
     <managingEditor>shinalli0102@gmail.com (shin alli)</managingEditor>
@@ -30,9 +30,9 @@
         <description>들어가며 서비스 개발을 하다보면 Serverless로 빠르게 개발이 필요한 경우가 생긴다. AWS를 쓰고있다면 Lambda 를 활용하면 되는데, 간단한 경우에는 콘솔로</description>
         
         <dc:creator>shin alli</dc:creator>
-        <media:content url="https://Shin0102.github.io/images/aws-lambda-with-sam/aws-lambda.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://Shin0102.github.ioimages/aws-lambda-with-sam/aws-lambda.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
-        <media:content url="https://Shin0102.github.io/static/images/aws-lambda-with-sam/aws-lambda.png" medium="image"><media:title type="html">meta image</media:title></media:content>
+        <media:content url="https://Shin0102.github.iostatic/images/aws-lambda-with-sam/aws-lambda.png" medium="image"><media:title type="html">meta image</media:title></media:content>
         
           
             

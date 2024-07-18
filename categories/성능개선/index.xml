@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>성능개선 on Alli&#39;s blog</title>
+    <link>https://Shin0102.github.io/categories/%EC%84%B1%EB%8A%A5%EA%B0%9C%EC%84%A0/</link>
+    <description>Recent content in 성능개선 on Alli&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <managingEditor>shinalli0102@gmail.com (shin alli)</managingEditor>
+    <webMaster>shinalli0102@gmail.com (shin alli)</webMaster>
+    <copyright>©2024, All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 27 May 2024 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://Shin0102.github.io/categories/%EC%84%B1%EB%8A%A5%EA%B0%9C%EC%84%A0/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>AWS DMS를 활용한 NoSQL 적용기</title>
+        <link>https://Shin0102.github.io/posts/nosql-apply-using-aws-dms/</link>
+        <pubDate>Mon, 27 May 2024 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        <atom:modified>Mon, 27 May 2024 00:00:00 +0000</atom:modified>
+        <guid>https://Shin0102.github.io/posts/nosql-apply-using-aws-dms/</guid>
+        <description>최근 회사에서 대량의 데이터를 엑셀로 다운로드하는 기능의 성능개선 요청이슈가 있었다. 워낙 많은양의 데이터를 한번에 불러오는 작업이다보니 DB에 병목현상이 발</description>
+        
+        <dc:creator>shin alli</dc:creator>
+        <media:content url="https://Shin0102.github.ioimages/nosql-apply-using-aws-dms/aws-dms.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        <media:content url="https://Shin0102.github.iostatic/images/nosql-apply-using-aws-dms/aws-dms.png" medium="image"><media:title type="html">meta image</media:title></media:content>
+        
+          
+            
+              <category>aws</category>
+            
+          
+            
+              <category>dms</category>
+            
+          
+            
+              <category>cdc</category>
+            
+          
+            
+              <category>nosql</category>
+            
+          
+        
+        
+          
+            
+              <category>성능개선</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

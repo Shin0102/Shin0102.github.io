@@ -14,16 +14,16 @@
     <managingEditor>shinalli0102@gmail.com (shin alli)</managingEditor>
     <webMaster>shinalli0102@gmail.com (shin alli)</webMaster>
     <copyright>©2024, All Rights Reserved</copyright>
-    <lastBuildDate>Thu, 06 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 May 2024 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://Shin0102.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
-        <title>Aws</title>
+        <title>aws</title>
         <link>https://Shin0102.github.io/tags/aws/</link>
-        <pubDate>Thu, 06 Jul 2023 00:00:00 +0000</pubDate>
+        <pubDate>Mon, 27 May 2024 00:00:00 +0000</pubDate>
         <author>shinalli0102@gmail.com (shin alli)</author>
         
         <guid>https://Shin0102.github.io/tags/aws/</guid>
@@ -39,7 +39,61 @@
       </item>
       
       <item>
-        <title>Elastic Beanstalk</title>
+        <title>cdc</title>
+        <link>https://Shin0102.github.io/tags/cdc/</link>
+        <pubDate>Mon, 27 May 2024 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        
+        <guid>https://Shin0102.github.io/tags/cdc/</guid>
+        <description></description>
+        
+        <dc:creator>shin alli</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>dms</title>
+        <link>https://Shin0102.github.io/tags/dms/</link>
+        <pubDate>Mon, 27 May 2024 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        
+        <guid>https://Shin0102.github.io/tags/dms/</guid>
+        <description></description>
+        
+        <dc:creator>shin alli</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>nosql</title>
+        <link>https://Shin0102.github.io/tags/nosql/</link>
+        <pubDate>Mon, 27 May 2024 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        
+        <guid>https://Shin0102.github.io/tags/nosql/</guid>
+        <description></description>
+        
+        <dc:creator>shin alli</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>elastic beanstalk</title>
         <link>https://Shin0102.github.io/tags/elastic-beanstalk/</link>
         <pubDate>Thu, 06 Jul 2023 00:00:00 +0000</pubDate>
         <author>shinalli0102@gmail.com (shin alli)</author>
@@ -57,7 +111,7 @@
       </item>
       
       <item>
-        <title>Infra</title>
+        <title>infra</title>
         <link>https://Shin0102.github.io/tags/infra/</link>
         <pubDate>Thu, 06 Jul 2023 00:00:00 +0000</pubDate>
         <author>shinalli0102@gmail.com (shin alli)</author>
@@ -75,7 +129,7 @@
       </item>
       
       <item>
-        <title>Nginx</title>
+        <title>nginx</title>
         <link>https://Shin0102.github.io/tags/nginx/</link>
         <pubDate>Thu, 06 Jul 2023 00:00:00 +0000</pubDate>
         <author>shinalli0102@gmail.com (shin alli)</author>
@@ -93,7 +147,7 @@
       </item>
       
       <item>
-        <title>Aws Summit</title>
+        <title>aws summit</title>
         <link>https://Shin0102.github.io/tags/aws-summit/</link>
         <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
         <author>shinalli0102@gmail.com (shin alli)</author>
@@ -111,7 +165,7 @@
       </item>
       
       <item>
-        <title>Database</title>
+        <title>database</title>
         <link>https://Shin0102.github.io/tags/database/</link>
         <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
         <author>shinalli0102@gmail.com (shin alli)</author>
@@ -129,7 +183,7 @@
       </item>
       
       <item>
-        <title>MSA</title>
+        <title>msa</title>
         <link>https://Shin0102.github.io/tags/msa/</link>
         <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
         <author>shinalli0102@gmail.com (shin alli)</author>
@@ -165,7 +219,7 @@
       </item>
       
       <item>
-        <title>Aws Lambda</title>
+        <title>aws lambda</title>
         <link>https://Shin0102.github.io/tags/aws-lambda/</link>
         <pubDate>Sat, 08 Oct 2022 00:00:00 +0000</pubDate>
         <author>shinalli0102@gmail.com (shin alli)</author>
@@ -183,7 +237,7 @@
       </item>
       
       <item>
-        <title>Aws Sam</title>
+        <title>aws sam</title>
         <link>https://Shin0102.github.io/tags/aws-sam/</link>
         <pubDate>Sat, 08 Oct 2022 00:00:00 +0000</pubDate>
         <author>shinalli0102@gmail.com (shin alli)</author>
@@ -201,7 +255,7 @@
       </item>
       
       <item>
-        <title>Iac</title>
+        <title>iac</title>
         <link>https://Shin0102.github.io/tags/iac/</link>
         <pubDate>Sat, 08 Oct 2022 00:00:00 +0000</pubDate>
         <author>shinalli0102@gmail.com (shin alli)</author>
@@ -219,7 +273,7 @@
       </item>
       
       <item>
-        <title>Lambda Environments</title>
+        <title>lambda environments</title>
         <link>https://Shin0102.github.io/tags/lambda-environments/</link>
         <pubDate>Sat, 08 Oct 2022 00:00:00 +0000</pubDate>
         <author>shinalli0102@gmail.com (shin alli)</author>
@@ -237,7 +291,7 @@
       </item>
       
       <item>
-        <title>Serverless</title>
+        <title>serverless</title>
         <link>https://Shin0102.github.io/tags/serverless/</link>
         <pubDate>Sat, 08 Oct 2022 00:00:00 +0000</pubDate>
         <author>shinalli0102@gmail.com (shin alli)</author>
@@ -255,7 +309,7 @@
       </item>
       
       <item>
-        <title>Clean Code</title>
+        <title>clean code</title>
         <link>https://Shin0102.github.io/tags/clean-code/</link>
         <pubDate>Sun, 31 Jul 2022 00:00:00 +0000</pubDate>
         <author>shinalli0102@gmail.com (shin alli)</author>
@@ -273,7 +327,7 @@
       </item>
       
       <item>
-        <title>Custom Exception Hanlder</title>
+        <title>custom exception hanlder</title>
         <link>https://Shin0102.github.io/tags/custom-exception-hanlder/</link>
         <pubDate>Sun, 31 Jul 2022 00:00:00 +0000</pubDate>
         <author>shinalli0102@gmail.com (shin alli)</author>
@@ -291,7 +345,7 @@
       </item>
       
       <item>
-        <title>Django</title>
+        <title>django</title>
         <link>https://Shin0102.github.io/tags/django/</link>
         <pubDate>Sun, 31 Jul 2022 00:00:00 +0000</pubDate>
         <author>shinalli0102@gmail.com (shin alli)</author>
@@ -309,7 +363,7 @@
       </item>
       
       <item>
-        <title>Style Guide</title>
+        <title>style guide</title>
         <link>https://Shin0102.github.io/tags/style-guide/</link>
         <pubDate>Sun, 31 Jul 2022 00:00:00 +0000</pubDate>
         <author>shinalli0102@gmail.com (shin alli)</author>
@@ -435,7 +489,7 @@
       </item>
       
       <item>
-        <title>Self-Supervised Learning</title>
+        <title>Self-supervised Learning</title>
         <link>https://Shin0102.github.io/tags/self-supervised-learning/</link>
         <pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate>
         <author>shinalli0102@gmail.com (shin alli)</author>
@@ -633,7 +687,7 @@
       </item>
       
       <item>
-        <title>Convolutional Neural Network</title>
+        <title>Convolutional Neural network</title>
         <link>https://Shin0102.github.io/tags/convolutional-neural-network/</link>
         <pubDate>Tue, 14 Jun 2022 00:00:00 +0000</pubDate>
         <author>shinalli0102@gmail.com (shin alli)</author>
@@ -651,12 +705,12 @@
       </item>
       
       <item>
-        <title>Padding, Stride - Feature Map의 크기</title>
-        <link>https://Shin0102.github.io/tags/padding-stride---feature-map%EC%9D%98-%ED%81%AC%EA%B8%B0/</link>
+        <title>Padding, Stride - Feature map의 크기</title>
+        <link>https://Shin0102.github.io/tags/padding-stride-feature-map%EC%9D%98-%ED%81%AC%EA%B8%B0/</link>
         <pubDate>Tue, 14 Jun 2022 00:00:00 +0000</pubDate>
         <author>shinalli0102@gmail.com (shin alli)</author>
         
-        <guid>https://Shin0102.github.io/tags/padding-stride---feature-map%EC%9D%98-%ED%81%AC%EA%B8%B0/</guid>
+        <guid>https://Shin0102.github.io/tags/padding-stride-feature-map%EC%9D%98-%ED%81%AC%EA%B8%B0/</guid>
         <description></description>
         
         <dc:creator>shin alli</dc:creator>
@@ -975,7 +1029,7 @@
       </item>
       
       <item>
-        <title>AWS Activate</title>
+        <title>AWS activate</title>
         <link>https://Shin0102.github.io/tags/aws-activate/</link>
         <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
         <author>shinalli0102@gmail.com (shin alli)</author>
@@ -1011,7 +1065,7 @@
       </item>
       
       <item>
-        <title>Argocd</title>
+        <title>argocd</title>
         <link>https://Shin0102.github.io/tags/argocd/</link>
         <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
         <author>shinalli0102@gmail.com (shin alli)</author>
@@ -1029,7 +1083,7 @@
       </item>
       
       <item>
-        <title>Github Action</title>
+        <title>github action</title>
         <link>https://Shin0102.github.io/tags/github-action/</link>
         <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
         <author>shinalli0102@gmail.com (shin alli)</author>
@@ -1065,7 +1119,7 @@
       </item>
       
       <item>
-        <title>Aws Eks</title>
+        <title>aws eks</title>
         <link>https://Shin0102.github.io/tags/aws-eks/</link>
         <pubDate>Sat, 19 Dec 2020 00:00:00 +0000</pubDate>
         <author>shinalli0102@gmail.com (shin alli)</author>
@@ -1083,7 +1137,7 @@
       </item>
       
       <item>
-        <title>Cdk</title>
+        <title>cdk</title>
         <link>https://Shin0102.github.io/tags/cdk/</link>
         <pubDate>Sat, 19 Dec 2020 00:00:00 +0000</pubDate>
         <author>shinalli0102@gmail.com (shin alli)</author>
@@ -1101,7 +1155,7 @@
       </item>
       
       <item>
-        <title>Iam</title>
+        <title>iam</title>
         <link>https://Shin0102.github.io/tags/iam/</link>
         <pubDate>Sat, 19 Dec 2020 00:00:00 +0000</pubDate>
         <author>shinalli0102@gmail.com (shin alli)</author>
@@ -1119,7 +1173,7 @@
       </item>
       
       <item>
-        <title>Role</title>
+        <title>role</title>
         <link>https://Shin0102.github.io/tags/role/</link>
         <pubDate>Sat, 19 Dec 2020 00:00:00 +0000</pubDate>
         <author>shinalli0102@gmail.com (shin alli)</author>
@@ -1137,7 +1191,7 @@
       </item>
       
       <item>
-        <title>Zzo Theme</title>
+        <title>zzo theme</title>
         <link>https://Shin0102.github.io/tags/zzo-theme/</link>
         <pubDate>Sun, 06 Dec 2020 00:00:00 +0000</pubDate>
         <author>shinalli0102@gmail.com (shin alli)</author>

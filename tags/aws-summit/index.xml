@@ -6,9 +6,9 @@
   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>Aws Summit on Alli&#39;s blog</title>
+    <title>aws summit on Alli&#39;s blog</title>
     <link>https://Shin0102.github.io/tags/aws-summit/</link>
-    <description>Recent content in Aws Summit on Alli&#39;s blog</description>
+    <description>Recent content in aws summit on Alli&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
     <managingEditor>shinalli0102@gmail.com (shin alli)</managingEditor>
@@ -30,9 +30,9 @@
         <description>들어가며 현재 회사에서 Monolothic Django로 서비스를 운영중이다. Django Admin, 비동기 처리를 위한 Worker 서버는 다른 Elastic Beanstalk 서버로 운영중이지만 같은 DB, 소스코드를 공유중인 상태로</description>
         
         <dc:creator>shin alli</dc:creator>
-        <media:content url="https://Shin0102.github.io/images/aws-summit-2022/aws-summit-2022.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://Shin0102.github.ioimages/aws-summit-2022/aws-summit-2022.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
-        <media:content url="https://Shin0102.github.io/static/images/aws-summit-2022/aws-summit-2022.png" medium="image"><media:title type="html">meta image</media:title></media:content>
+        <media:content url="https://Shin0102.github.iostatic/images/aws-summit-2022/aws-summit-2022.png" medium="image"><media:title type="html">meta image</media:title></media:content>
         
           
             

@@ -6,9 +6,9 @@
   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>AWS Activate on Alli&#39;s blog</title>
+    <title>AWS activate on Alli&#39;s blog</title>
     <link>https://Shin0102.github.io/tags/aws-activate/</link>
-    <description>Recent content in AWS Activate on Alli&#39;s blog</description>
+    <description>Recent content in AWS activate on Alli&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
     <managingEditor>shinalli0102@gmail.com (shin alli)</managingEditor>
@@ -30,9 +30,9 @@
         <description>들어가며 3년 넘게 다니던 회사를 그만두게 되고, 타이밍 좋게? 지인소개로 새로 런칭하는 서비스(재능기부 플랫폼)의 백엔드 개발에 참여하게 되었다. 레거시 없이</description>
         
         <dc:creator>shin alli</dc:creator>
-        <media:content url="https://Shin0102.github.io/images/indie-developer.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://Shin0102.github.ioimages/indie-developer.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
-        <media:content url="https://Shin0102.github.io/static/images/indie-developer.png" medium="image"><media:title type="html">meta image</media:title></media:content>
+        <media:content url="https://Shin0102.github.iostatic/images/indie-developer.png" medium="image"><media:title type="html">meta image</media:title></media:content>
         
           
             

@@ -6,9 +6,9 @@
   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>Infra on Alli&#39;s blog</title>
+    <title>infra on Alli&#39;s blog</title>
     <link>https://Shin0102.github.io/categories/infra/</link>
-    <description>Recent content in Infra on Alli&#39;s blog</description>
+    <description>Recent content in infra on Alli&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
     <managingEditor>shinalli0102@gmail.com (shin alli)</managingEditor>
@@ -30,9 +30,9 @@
         <description>들어가며 Elastic Beanstalk(이하 EB)은 어플리케이션 배포/관리(프로비저닝, 로드 밸런싱, 스케일링, 모니터링등)를 손쉽게 할수 있도록 도와주는 AWS</description>
         
         <dc:creator>shin alli</dc:creator>
-        <media:content url="https://Shin0102.github.io/images/aws-eb-nginx-config/elastic_beanstalk_logo.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://Shin0102.github.ioimages/aws-eb-nginx-config/elastic_beanstalk_logo.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
-        <media:content url="https://Shin0102.github.io/static/images/aws-eb-nginx-config/elastic_beanstalk_logo.png" medium="image"><media:title type="html">meta image</media:title></media:content>
+        <media:content url="https://Shin0102.github.iostatic/images/aws-eb-nginx-config/elastic_beanstalk_logo.png" medium="image"><media:title type="html">meta image</media:title></media:content>
         
           
             
@@ -72,9 +72,9 @@
         <description>들어가며 서비스 개발을 하다보면 Serverless로 빠르게 개발이 필요한 경우가 생긴다. AWS를 쓰고있다면 Lambda 를 활용하면 되는데, 간단한 경우에는 콘솔로</description>
         
         <dc:creator>shin alli</dc:creator>
-        <media:content url="https://Shin0102.github.io/images/aws-lambda-with-sam/aws-lambda.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://Shin0102.github.ioimages/aws-lambda-with-sam/aws-lambda.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
-        <media:content url="https://Shin0102.github.io/static/images/aws-lambda-with-sam/aws-lambda.png" medium="image"><media:title type="html">meta image</media:title></media:content>
+        <media:content url="https://Shin0102.github.iostatic/images/aws-lambda-with-sam/aws-lambda.png" medium="image"><media:title type="html">meta image</media:title></media:content>
         
           
             

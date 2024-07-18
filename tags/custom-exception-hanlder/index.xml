@@ -6,9 +6,9 @@
   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>Custom Exception Hanlder on Alli&#39;s blog</title>
+    <title>custom exception hanlder on Alli&#39;s blog</title>
     <link>https://Shin0102.github.io/tags/custom-exception-hanlder/</link>
-    <description>Recent content in Custom Exception Hanlder on Alli&#39;s blog</description>
+    <description>Recent content in custom exception hanlder on Alli&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
     <managingEditor>shinalli0102@gmail.com (shin alli)</managingEditor>
@@ -30,9 +30,9 @@
         <description>들어가며 django를 사용하게 되면 보통 django rest framework(이하 drf)를 같이 사용하여 rest api 서버를 구성하는 경우가 많다. 여러 프로젝트를 거치며 다</description>
         
         <dc:creator>shin alli</dc:creator>
-        <media:content url="https://Shin0102.github.io/images/django-clean-code/django.svg" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://Shin0102.github.ioimages/django-clean-code/django.svg" medium="image"><media:title type="html">featured image</media:title></media:content>
         
-        <media:content url="https://Shin0102.github.io/static/images/django-clean-code/django.svg" medium="image"><media:title type="html">meta image</media:title></media:content>
+        <media:content url="https://Shin0102.github.iostatic/images/django-clean-code/django.svg" medium="image"><media:title type="html">meta image</media:title></media:content>
         
           
             
