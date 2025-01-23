@@ -13,7 +13,7 @@
     <language>ko</language>
     <managingEditor>shinalli0102@gmail.com (shin alli)</managingEditor>
     <webMaster>shinalli0102@gmail.com (shin alli)</webMaster>
-    <copyright>©2024, All Rights Reserved</copyright>
+    <copyright>©2025, All Rights Reserved</copyright>
     <lastBuildDate>Mon, 27 May 2024 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://Shin0102.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
@@ -56,6 +56,40 @@
           
             
               <category>성능개선</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>정산시스템 이벤트 기반 아키텍처로 마이그레이션 하기</title>
+        <link>https://Shin0102.github.io/posts/event-driven-architecture/</link>
+        <pubDate>Sun, 03 Mar 2024 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        <atom:modified>Sun, 03 Mar 2024 00:00:00 +0000</atom:modified>
+        <guid>https://Shin0102.github.io/posts/event-driven-architecture/</guid>
+        <description>들어가며 작년 하반기에 입사당시부터 문제가 많았던 정산시스템을 마이그레이션 하였다. 회사 도메인 특성상 매달 사용자의 급여를 입금받아 정산하고 이를 다시 사용자</description>
+        
+        <dc:creator>shin alli</dc:creator>
+        <media:content url="https://Shin0102.github.ioimages/event-driven-architecture/paywatch.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        <media:content url="https://Shin0102.github.iostatic/images/event-driven-architecture/paywatch.png" medium="image"><media:title type="html">meta image</media:title></media:content>
+        
+          
+            
+              <category>EDA</category>
+            
+          
+            
+              <category>Migration</category>
+            
+          
+        
+        
+          
+            
+              <category>Migration</category>
             
           
         

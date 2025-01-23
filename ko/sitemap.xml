@@ -103,6 +103,34 @@
   </url>
   
   <url>
+    <loc>https://Shin0102.github.io/tags/eda/</loc>
+    <lastmod>2024-03-03T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/tags/migration/</loc>
+    <lastmod>2024-03-03T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/categories/migration/</loc>
+    <lastmod>2024-03-03T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/posts/event-driven-architecture/</loc>
+    <lastmod>2024-03-03T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://Shin0102.github.io/posts/aws-eb-nginx-config/</loc>
     <lastmod>2023-07-06T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
