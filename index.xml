@@ -66,7 +66,7 @@
       </item>
       
       <item>
-        <title>정산시스템 이벤트 기반 아키텍처로 마이그레이션 하기</title>
+        <title>정산시스템 이벤트 기반 아키텍처(EDA)로 마이그레이션 하기</title>
         <link>https://Shin0102.github.io/posts/event-driven-architecture/</link>
         <pubDate>Sun, 03 Mar 2024 00:00:00 +0000</pubDate>
         <author>shinalli0102@gmail.com (shin alli)</author>
@@ -706,6 +706,56 @@
       </item>
       
       <item>
+        <title>django 에서 celery 활용기</title>
+        <link>https://Shin0102.github.io/posts/django-celery-usage/</link>
+        <pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        <atom:modified>Tue, 19 Apr 2022 00:00:00 +0000</atom:modified>
+        <guid>https://Shin0102.github.io/posts/django-celery-usage/</guid>
+        <description>들어가며 django로 서버를 운영하다보면 비동기 처리가 필요한 경우가 많다. 예를 들어 외부 API 호출, 데이터베이스 조회, 복잡한 계산 등등 많은 경우에 비동기 처</description>
+        
+        <dc:creator>shin alli</dc:creator>
+        <media:content url="https://Shin0102.github.ioimages/django-celery-usage/python-celery.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        <media:content url="https://Shin0102.github.iostatic/images/django-celery-usage/python-celery.png" medium="image"><media:title type="html">meta image</media:title></media:content>
+        
+          
+            
+              <category>django</category>
+            
+          
+            
+              <category>celery</category>
+            
+          
+            
+              <category>비동기</category>
+            
+          
+            
+              <category>asnyc</category>
+            
+          
+            
+              <category>분산락</category>
+            
+          
+            
+              <category>distributed lock</category>
+            
+          
+        
+        
+          
+            
+              <category>django</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
         <title>1인 개발로 서비스 런칭하며...</title>
         <link>https://Shin0102.github.io/posts/indie-developer/</link>
         <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
@@ -750,7 +800,7 @@
         <author>shinalli0102@gmail.com (shin alli)</author>
         <atom:modified>Tue, 01 Jun 2021 00:00:00 +0000</atom:modified>
         <guid>https://Shin0102.github.io/posts/devops-msa-considerations/</guid>
-        <description>고려해야 될점 Service Discovery : Container가 Scailing 되어도 해당서비스를 찾을 수 있어야 함 API Gateway : 외부에서 내부의 서비스들에 접근에 대한 제어(인증, 로깅, 모니터링,</description>
+        <description>고려해야 될점 Service Discovery : Container가 Scailing 되어도 해당서비스를 찾을 수 있어야 함 서비스 레지스트리 (Eureka, Consul) 활용 DNS 기반 서비스 디스커버리 (AWS Route53) 쿠버네티스의 경우 Service,</description>
         
         <dc:creator>shin alli</dc:creator>
         <media:content url="https://Shin0102.github.ioimages/msa.png" medium="image"><media:title type="html">featured image</media:title></media:content>

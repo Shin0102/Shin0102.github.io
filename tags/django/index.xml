@@ -62,6 +62,56 @@
         
       </item>
       
+      <item>
+        <title>django 에서 celery 활용기</title>
+        <link>https://Shin0102.github.io/posts/django-celery-usage/</link>
+        <pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        <atom:modified>Tue, 19 Apr 2022 00:00:00 +0000</atom:modified>
+        <guid>https://Shin0102.github.io/posts/django-celery-usage/</guid>
+        <description>들어가며 django로 서버를 운영하다보면 비동기 처리가 필요한 경우가 많다. 예를 들어 외부 API 호출, 데이터베이스 조회, 복잡한 계산 등등 많은 경우에 비동기 처</description>
+        
+        <dc:creator>shin alli</dc:creator>
+        <media:content url="https://Shin0102.github.ioimages/django-celery-usage/python-celery.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        <media:content url="https://Shin0102.github.iostatic/images/django-celery-usage/python-celery.png" medium="image"><media:title type="html">meta image</media:title></media:content>
+        
+          
+            
+              <category>django</category>
+            
+          
+            
+              <category>celery</category>
+            
+          
+            
+              <category>비동기</category>
+            
+          
+            
+              <category>asnyc</category>
+            
+          
+            
+              <category>분산락</category>
+            
+          
+            
+              <category>distributed lock</category>
+            
+          
+        
+        
+          
+            
+              <category>django</category>
+            
+          
+        
+        
+      </item>
+      
 
     
   </channel>

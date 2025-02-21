@@ -614,6 +614,55 @@
   </url>
   
   <url>
+    <loc>https://Shin0102.github.io/tags/asnyc/</loc>
+    <lastmod>2022-04-19T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/tags/celery/</loc>
+    <lastmod>2022-04-19T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/tags/distributed-lock/</loc>
+    <lastmod>2022-04-19T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/categories/django/</loc>
+    <lastmod>2022-04-19T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/posts/django-celery-usage/</loc>
+    <lastmod>2022-04-19T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/tags/%EB%B6%84%EC%82%B0%EB%9D%BD/</loc>
+    <lastmod>2022-04-19T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://Shin0102.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/</loc>
+    <lastmod>2022-04-19T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://Shin0102.github.io/tags/1%EC%9D%B8-%EA%B0%9C%EB%B0%9C/</loc>
     <lastmod>2021-12-13T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>

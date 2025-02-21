@@ -1405,7 +1405,7 @@
     "datePublished": "2021-06-01T00:00:00Z",
     "dateModified": "2021-06-01T00:00:00Z",
     "url" : "https://Shin0102.github.io/posts/devops-msa-considerations/",
-    "description": "고려해야 될점 Service Discovery : Container가 Scailing 되어도 해당서비스를 찾을 수 있어야 함 API Gateway : 외부에서 내부의 서비스들에 접근에 대한 제어(인증, 로깅, 모니터링,",
+    "description": "고려해야 될점 Service Discovery : Container가 Scailing 되어도 해당서비스를 찾을 수 있어야 함 서비스 레지스트리 (Eureka, Consul) 활용 DNS 기반 서비스 디스커버리 (AWS Route53) 쿠버네티스의 경우 Service,",
     "keywords": ["MSA"],
     "image" : "https://Shin0102.github.io/images/msa.png",
     "mainEntityOfPage": {
@@ -1664,7 +1664,7 @@
 <div class="single__infos">
   <time class="single__info" title="작성일">📅&nbsp;2021년 06월 01일 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="읽는 시간"> ☕&nbsp;1&nbsp;min read </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="읽는 시간"> ☕&nbsp;2&nbsp;min read </span>
   
   <span class="single__info">
     
@@ -1687,29 +1687,141 @@
       <h2 id="고려해야-될점">고려해야 될점</h2>
 <hr />
 <ul>
-<li><strong>Service Discovery</strong> : Container가 Scailing 되어도 해당서비스를 찾을 수 있어야 함</li>
-<li><strong>API Gateway</strong> : 외부에서 내부의 서비스들에 접근에 대한 제어(인증, 로깅, 모니터링, Response)</li>
-<li><strong>Load balance</strong> : Container나 Instance 성능을 위해 외부요청을 적절히 분배</li>
-<li><strong>Cirecuit Breaker</strong> : 하나의 서비스 장애가 전체 서비스의 장애가 되지 않아야함</li>
-<li><strong>IPC</strong> : 서비스 사이의 통신
+<li>
+<p><strong>Service Discovery</strong> : Container가 Scailing 되어도 해당서비스를 찾을 수 있어야 함</p>
 <ul>
-<li>Sync : HTTP, gRPC</li>
-<li>Async : RabbitMQ, AWS SQS, Kafka, Kinesis 등등</li>
+<li>서비스 레지스트리 (Eureka, Consul) 활용</li>
+<li>DNS 기반 서비스 디스커버리 (AWS Route53)</li>
+<li>쿠버네티스의 경우 Service, Ingress 리소스 활용</li>
 </ul>
 </li>
-<li><strong>DDD</strong> (Domain Drive Design -&gt; Event storming, Bounded context) : MSA를 어떻게 구성할지에 대한 방법론</li>
+<li>
+<p><strong>API Gateway</strong> : 외부에서 내부의 서비스들에 접근에 대한 제어(인증, 로깅, 모니터링, Response)</p>
+<ul>
+<li>인증/인가 (OAuth2, JWT)</li>
+<li>속도 제한 (Rate Limiting)</li>
+<li>요청/응답 변환</li>
+<li>캐싱 전략</li>
+</ul>
+</li>
+<li>
+<p><strong>Load balance</strong> : Container나 Instance 성능을 위해 외부요청을 적절히 분배</p>
+<ul>
+<li>로드밸런싱 알고리즘 (Round Robin, Least Connection 등)</li>
+<li>Health Check 전략</li>
+<li>Auto Scaling 정책</li>
+</ul>
+</li>
+<li>
+<p><strong>Circuit Breaker</strong> : 하나의 서비스 장애가 전체 서비스의 장애가 되지 않아야함</p>
+<ul>
+<li>Fallback 메커니즘</li>
+<li>Timeout 설정</li>
+<li>Retry 정책</li>
+<li>Hystrix, Resilience4j 등 라이브러리 활용</li>
+</ul>
+</li>
+<li>
+<p><strong>IPC</strong> : 서비스 사이의 통신</p>
+<ul>
+<li>Sync :
+<ul>
+<li>HTTP/REST: OpenAPI(Swagger) 명세</li>
+<li>gRPC: 높은 성능, Protocol Buffers</li>
+</ul>
+</li>
+<li>Async :
+<ul>
+<li>Message Queue 선택 기준 (처리량, 지연시간, 내구성)</li>
+<li>Event-Driven Architecture 구현</li>
+<li>Dead Letter Queue 처리</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>DDD</strong> (Domain Drive Design -&gt; Event storming, Bounded context) : MSA를 어떻게 구성할지에 대한 방법론</p>
+<ul>
+<li>전략적 설계 (Strategic Design)</li>
+<li>전술적 설계 (Tactical Design)</li>
+<li>컨텍스트 매핑 패턴</li>
+</ul>
+</li>
 </ul>
 <h2 id="msa-pattern">MSA Pattern</h2>
 <hr />
 <ul>
-<li><strong>SAGA</strong> : MSA에서의 트랜잭션 처리
+<li>
+<p><strong>SAGA</strong> : MSA에서의 트랜잭션 처리</p>
 <ul>
-<li>Choreography-Based Saga</li>
-<li>Orchestrations-Based Saga</li>
+<li>Choreography-Based Saga
+<ul>
+<li>장점: 느슨한 결합, 간단한 구현</li>
+<li>단점: 순환 종속성 위험, 테스트 어려움</li>
 </ul>
 </li>
-<li><strong>Event Source</strong> : 발생하는 모든 event를 event table의 저장</li>
-<li><strong>CQRS</strong> : CUD와 Read를 분리(AWS DynamoDB와 같은 DB와 sync), Event Source 패턴과 결합</li>
+<li>Orchestrations-Based Saga
+<ul>
+<li>장점: 중앙 집중식 관리, 명확한 흐름</li>
+<li>단점: 오케스트레이터 복잡도 증가</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Event Sourcing</strong> : 발생하는 모든 event를 event table의 저장</p>
+<ul>
+<li>이벤트 저장소 구현 방법</li>
+<li>스냅샷 전략</li>
+<li>이벤트 버저닝</li>
+<li>동시성 처리</li>
+</ul>
+</li>
+<li>
+<p><strong>CQRS</strong> : CUD와 Read를 분리(AWS DynamoDB와 같은 DB와 sync), Event Source 패턴과 결합</p>
+<ul>
+<li>Read/Write 모델 분리 전략</li>
+<li>동기화 전략</li>
+<li>정합성 관리</li>
+<li>성능 최적화 방안</li>
+</ul>
+</li>
+</ul>
+<h2 id="추가-고려사항">추가 고려사항</h2>
+<hr />
+<ul>
+<li>
+<p><strong>모니터링과 로깅</strong></p>
+<ul>
+<li>분산 추적 (Distributed Tracing)</li>
+<li>중앙 집중식 로깅</li>
+<li>메트릭 수집 및 알림</li>
+</ul>
+</li>
+<li>
+<p><strong>데이터 관리</strong></p>
+<ul>
+<li>데이터베이스 per 서비스</li>
+<li>데이터 일관성 전략</li>
+<li>마이그레이션 전략</li>
+</ul>
+</li>
+<li>
+<p><strong>보안</strong></p>
+<ul>
+<li>서비스간 인증/인가</li>
+<li>암호화 전략</li>
+<li>취약점 관리</li>
+</ul>
+</li>
+<li>
+<p><strong>배포 전략</strong></p>
+<ul>
+<li>Blue/Green 배포</li>
+<li>Canary 배포</li>
+<li>Rolling 업데이트</li>
+</ul>
+</li>
 </ul>
 
     </article>
@@ -2418,6 +2530,7 @@ document.addEventListener('DOMContentLoaded', function () {
   <ul>
     <li><a href="#고려해야-될점">고려해야 될점</a></li>
     <li><a href="#msa-pattern">MSA Pattern</a></li>
+    <li><a href="#추가-고려사항">추가 고려사항</a></li>
   </ul>
 </nav>
   </div>

@@ -65,7 +65,7 @@
         <author>shinalli0102@gmail.com (shin alli)</author>
         <atom:modified>Tue, 01 Jun 2021 00:00:00 +0000</atom:modified>
         <guid>https://Shin0102.github.io/posts/devops-msa-considerations/</guid>
-        <description>고려해야 될점 Service Discovery : Container가 Scailing 되어도 해당서비스를 찾을 수 있어야 함 API Gateway : 외부에서 내부의 서비스들에 접근에 대한 제어(인증, 로깅, 모니터링,</description>
+        <description>고려해야 될점 Service Discovery : Container가 Scailing 되어도 해당서비스를 찾을 수 있어야 함 서비스 레지스트리 (Eureka, Consul) 활용 DNS 기반 서비스 디스커버리 (AWS Route53) 쿠버네티스의 경우 Service,</description>
         
         <dc:creator>shin alli</dc:creator>
         <media:content url="https://Shin0102.github.ioimages/msa.png" medium="image"><media:title type="html">featured image</media:title></media:content>
