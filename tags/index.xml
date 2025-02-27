@@ -1047,12 +1047,12 @@
       </item>
       
       <item>
-        <title>asnyc</title>
-        <link>https://Shin0102.github.io/tags/asnyc/</link>
+        <title>async</title>
+        <link>https://Shin0102.github.io/tags/async/</link>
         <pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate>
         <author>shinalli0102@gmail.com (shin alli)</author>
         
-        <guid>https://Shin0102.github.io/tags/asnyc/</guid>
+        <guid>https://Shin0102.github.io/tags/async/</guid>
         <description></description>
         
         <dc:creator>shin alli</dc:creator>
@@ -1089,6 +1089,42 @@
         <author>shinalli0102@gmail.com (shin alli)</author>
         
         <guid>https://Shin0102.github.io/tags/distributed-lock/</guid>
+        <description></description>
+        
+        <dc:creator>shin alli</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>redis</title>
+        <link>https://Shin0102.github.io/tags/redis/</link>
+        <pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        
+        <guid>https://Shin0102.github.io/tags/redis/</guid>
+        <description></description>
+        
+        <dc:creator>shin alli</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>visibility timeout</title>
+        <link>https://Shin0102.github.io/tags/visibility-timeout/</link>
+        <pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        
+        <guid>https://Shin0102.github.io/tags/visibility-timeout/</guid>
         <description></description>
         
         <dc:creator>shin alli</dc:creator>

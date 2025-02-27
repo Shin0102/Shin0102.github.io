@@ -1342,7 +1342,7 @@
 <meta name="description" content="" />
 
 
-<meta name="keywords" content="django,celery,비동기,asnyc,분산락,distributed lock">
+<meta name="keywords" content="django,celery,비동기,async,분산락,distributed lock,redis,visibility timeout">
 
 <meta name="created" content="2022-04-19T00:00:00&#43;0000">
 <meta name="modified" content="2022-04-19T00:00:00&#43;0000">
@@ -1406,7 +1406,7 @@
     "dateModified": "2022-04-19T00:00:00Z",
     "url" : "https://Shin0102.github.io/posts/django-celery-usage/",
     "description": "들어가며 django로 서버를 운영하다보면 비동기 처리가 필요한 경우가 많다. 예를 들어 외부 API 호출, 데이터베이스 조회, 복잡한 계산 등등 많은 경우에 비동기 처",
-    "keywords": ["django","celery","비동기","asnyc","분산락","distributed lock"],
+    "keywords": ["django","celery","비동기","async","분산락","distributed lock","redis","visibility timeout"],
     "image" : "https://Shin0102.github.io/images/django-celery-usage/python-celery.png",
     "mainEntityOfPage": {
       "@type": "WebPage",
@@ -1664,7 +1664,7 @@
 <div class="single__infos">
   <time class="single__info" title="작성일">📅&nbsp;2022년 04월 19일 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="읽는 시간"> ☕&nbsp;1&nbsp;min read </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="읽는 시간"> ☕&nbsp;4&nbsp;min read </span>
   
   <span class="single__info">
     
@@ -1683,11 +1683,15 @@
 
   <li><a href="https://Shin0102.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/" class="single__tag" title="비동기">#비동기</a></li>
 
-  <li><a href="https://Shin0102.github.io/tags/asnyc/" class="single__tag" title="asnyc">#asnyc</a></li>
+  <li><a href="https://Shin0102.github.io/tags/async/" class="single__tag" title="async">#async</a></li>
 
   <li><a href="https://Shin0102.github.io/tags/%EB%B6%84%EC%82%B0%EB%9D%BD/" class="single__tag" title="분산락">#분산락</a></li>
 
   <li><a href="https://Shin0102.github.io/tags/distributed-lock/" class="single__tag" title="distributed lock">#distributed lock</a></li>
+
+  <li><a href="https://Shin0102.github.io/tags/redis/" class="single__tag" title="redis">#redis</a></li>
+
+  <li><a href="https://Shin0102.github.io/tags/visibility-timeout/" class="single__tag" title="visibility timeout">#visibility timeout</a></li>
 
 </ul>
 
@@ -1699,17 +1703,137 @@
 <p>   django로 서버를 운영하다보면 비동기 처리가 필요한 경우가 많다. 예를 들어 외부 API 호출, 데이터베이스 조회, 복잡한 계산 등등 많은 경우에 비동기 처리가 필요하다. 이때 celery를 활용하여 비동기 처리를 할 수 있다. celery에 관한 기본적인 설정이나 사용법들은 다른 블로그에 잘 나와있어서 이 포스트에서는 실제 프로젝트에서 사용한 경험과 유용했던 설정, 그리고 trouble shooting을 정리해보려 한다. (Broker 서버는 redis를 사용)</p>
 <h2 id="celery-구성">celery 구성</h2>
 <hr />
-<p>   아래는 celery를 실제 서비스에 사용하면서 효과를 보았던 설정들이다.</p>
+<p>   아래는 celery를 실제 서비스에 운영하면서 설정한 내용들이다.</p>
 <h5 id="1-큐-분리">1. 큐 분리</h5>
+<p>   celery는 broker서버에 있는 <strong>task들을 worker가 pull 해서 처리</strong>한다. 이때 오랜시간이 걸리는 task를 모든 worker가 큐에서 prefetch 하여 가져와 작업(대기)중인 상태라면 다른 task가 실행되지 못하고 쌓이게 된다. 이럴 경우 task의 특성에맞게 큐를 분리해주면 task가 쌓이는 상황을 어느정도 방지할 수 있다. 아래는 간단한 예시이다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">app</span><span class="o">.</span><span class="n">conf</span><span class="o">.</span><span class="n">task_default_queue</span> <span class="o">=</span> <span class="s2">&#34;short-task&#34;</span>  <span class="c1"># 기본 큐 설정</span>
+</span></span><span class="line"><span class="cl"><span class="n">app</span><span class="o">.</span><span class="n">conf</span><span class="o">.</span><span class="n">update</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">task_queues</span><span class="o">=</span><span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Queue</span><span class="p">(</span><span class="s1">&#39;short-task&#39;</span><span class="p">,</span> <span class="n">routing_key</span><span class="o">=</span><span class="s2">&#34;short.#&#34;</span><span class="p">),</span>  <span class="c1"># 빠른 처리가 필요한 작업용 큐</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Queue</span><span class="p">(</span><span class="s1">&#39;long-task&#39;</span><span class="p">,</span> <span class="n">routing_key</span><span class="o">=</span><span class="s2">&#34;long.#&#34;</span><span class="p">),</span>    <span class="c1"># 시간이 오래 걸리는 작업용 큐</span>
+</span></span><span class="line"><span class="cl">    <span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 태스크 예시</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@app</span><span class="o">.</span><span class="n">task</span><span class="p">(</span><span class="n">queue</span><span class="o">=</span><span class="s1">&#39;short-task&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">send_notification</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="k">pass</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@app</span><span class="o">.</span><span class="n">task</span><span class="p">(</span><span class="n">queue</span><span class="o">=</span><span class="s1">&#39;long-task&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">process_large_file</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="k">pass</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h5 id="2-prefetch-multiplier-및-acks_late-설정">2. prefetch-multiplier 및 acks_late 설정</h5>
+<p>   먼저 각각의 설정에 대해 알아보면 <em><strong>prefetch-multiplier</strong></em>는 큐에서 가져오는 task의 수를 결정하는 설정이다. 기본값은 4이며, 이 말은 worker가 큐에서 task를 가져올때 4개의 task를 가져옴을 의미한다. <em><strong>acks_late</strong></em>는 True로 설정하게 되면 task가 성공적으로 실행되었을때만 브로커에서 해당 task를 삭제한다. 기본값은 False 이다. 이 옵션들은 일반적으로 아래와 같이 활용하는게 좋다.</p>
+<div class="box"><ul>
+<li>short-running task는 prefetch-multiplier를 높게 설정하여 빠른 처리를 위해 더 많은 task를 가져오게 세팅</li>
+<li>long-running task는 prefetch-multiplier를 1로 설정하여 한번에 하나의 task만 가져오게 세팅하여 <strong>worker를 점유하는 시간을 줄이고</strong> acks_late를 True로 설정하여 task가 정상적으로 실행되지 않았을 경우 브로커에서 해당 task를 삭제하지 않도록 세팅 (<strong>이때 중복처리에 대한 처리가 되어있어야 함, 멱등성 보장</strong>)</li>
+</ul>
+</div>
+<h5 id="3-ofair">3. Ofair</h5>
+<p>   <em><strong>Optimized Fair Scheduling</strong></em>을 의미하며, 작업을 처리할 때 task를 실행가능한 worker를 바로 할당을 한다. 따라서 작업들의 실행 시간이 제각각인 경우에도 최적화된 실행을 할 수 있다. (4.0부터 기본으로 동작함)</p>
 <h2 id="djang-celery-beat">djang-celery-beat</h2>
 <hr />
-<p>   </p>
+<p>   djang-celery-beat는 celery의 task를 주기적으로 실행할 수 있도록 관리하는 플러그인이다. 별도의 코드없이 django admin에서 쉽게 task 스케줄을 관리할 수 있기 때문에, celery를 사용하는 경우 유용하게 사용할 수 있다. crontabl, interval, periodic 여러방식으로 설정할 수 있다. <a href="https://github.com/celery/django-celery-beat">https://github.com/celery/django-celery-beat</a></p>
 <h2 id="single-task-처리">single task 처리</h2>
 <hr />
-<p>   </p>
+<p>   celery를 사용하다보면 task가 중복실행되는 경우를 방지하고싶은 상황이 생긴다. 예를들어 특정 task의 실행시간을 예측하기 힘든상황에 주기적으로 task가 실행되어야 한다면 중복실행을 방지하는 것이 중요하다. 이때 application level에서 중복실행을 방지하기는 어렵다. 특히나 worker서버가 다수인 경우에는 더욱 그렇다. 그래서 <em><strong>redis 분산 lock</strong></em>을 활용하였다. 예제는 아래와 같다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># task의 worker 실행 개수를 1개로 제한하기 위한 redis lock decorator</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">single_task</span><span class="p">(</span><span class="n">timeout</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">TASK_LOCK_EXPIRE</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Callable</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">task_exc</span><span class="p">(</span><span class="n">func</span><span class="p">:</span> <span class="n">Callable</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Callable</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nd">@functools</span><span class="o">.</span><span class="n">wraps</span><span class="p">(</span><span class="n">func</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">def</span> <span class="nf">wrapper</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">lock_id</span> <span class="o">=</span> <span class="n">TASK_LOCK_ID_PRE_FIX</span> <span class="o">+</span> <span class="n">func</span><span class="o">.</span><span class="vm">__name__</span>
+</span></span><span class="line"><span class="cl">            <span class="n">acquire_lock</span> <span class="o">=</span> <span class="k">lambda</span><span class="p">:</span> <span class="n">cache</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">lock_id</span><span class="p">,</span> <span class="s2">&#34;true&#34;</span><span class="p">,</span> <span class="n">timeout</span><span class="p">)</span>  <span class="c1"># noqa</span>
+</span></span><span class="line"><span class="cl">            <span class="n">release_lock</span> <span class="o">=</span> <span class="k">lambda</span><span class="p">:</span> <span class="n">cache</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">lock_id</span><span class="p">)</span>  <span class="c1"># noqa</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">acquire_lock</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">                <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Acquired lock for </span><span class="si">{</span><span class="n">func</span><span class="o">.</span><span class="vm">__name__</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                        <span class="sa">f</span><span class="s2">&#34;Exception raise </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2"> lock for </span><span class="si">{</span><span class="n">func</span><span class="o">.</span><span class="vm">__name__</span><span class="si">}</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">finally</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">release_lock</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Released lock for </span><span class="si">{</span><span class="n">func</span><span class="o">.</span><span class="vm">__name__</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">wrapper</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">task_exc</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 사용 예시</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@app</span><span class="o">.</span><span class="n">task</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@single_task</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">precoess_something</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="k">pass</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>위와 같이 사용하면 task의 중복실행을 방지할 수 있다. 주의할점은 lock expire 시간을 충분히 길게 잡아주어야 한다. 추가적으로 worker 서버 배포시에 <em><strong>task lock을 expire 시키는 script를 작성</strong></em>하여 실행시켜줘야 한다.</p>
+<ul>
+<li>참고: <a href="https://stackoverflow.com/questions/4095940/running-unique-tasks-with-celery">https://stackoverflow.com/questions/4095940/running-unique-tasks-with-celery</a></li>
+</ul>
 <h2 id="trouble-shooting">trouble shooting</h2>
 <hr />
-<p>   </p>
+<h4 id="redis-broker-visibility-timeout">redis broker visibility timeout</h4>
+<p>   데이터를 마이그레이션 할 일이 생겨, 1회성으로 celery task를 script를 실행하였는데, 어느순간부터 데이터 중복이 모니터링 되었다. 이상해서 flower 를 확인해보았는데 task가 중복으로 실행되고 있었다.</p>
+<p>   문제는 <em><strong>redis의 visibility timeout 문제였다(+acks_late=True)</strong></em>. redis를 broker로 사용하는 경우 메시지를 영속적으로 저장하지 않고, visibility timeout 에 의존한다. 해당값은 1시간(3600)이 기본값으로 설정되어있다. 해당 script가 1시간 이상 소요되면서 task가 중복실행 되었던 것이었다. redis의 경우 설정이 간단한 대신 메시지가 영속적으로 저장되지 않기때문에, 메시지 손실이 발생할 가능성이 있다. 그래서 celery에서는 RabbitMQ를 사용하는 것을 권장하고 있다.</p>
 
     </article>
     
@@ -2423,7 +2547,11 @@ document.addEventListener('DOMContentLoaded', function () {
     </li>
     <li><a href="#djang-celery-beat">djang-celery-beat</a></li>
     <li><a href="#single-task-처리">single task 처리</a></li>
-    <li><a href="#trouble-shooting">trouble shooting</a></li>
+    <li><a href="#trouble-shooting">trouble shooting</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>

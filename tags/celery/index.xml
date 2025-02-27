@@ -48,7 +48,7 @@
             
           
             
-              <category>asnyc</category>
+              <category>async</category>
             
           
             
@@ -57,6 +57,14 @@
           
             
               <category>distributed lock</category>
+            
+          
+            
+              <category>redis</category>
+            
+          
+            
+              <category>visibility timeout</category>
             
           
         
