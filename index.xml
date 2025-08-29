@@ -511,30 +511,6 @@
         
       </item>
       
-      <item>
-        <title>About</title>
-        <link>https://Shin0102.github.io/about/</link>
-        <pubDate>Sat, 05 Dec 2020 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        <atom:modified>Sat, 05 Dec 2020 00:00:00 +0000</atom:modified>
-        <guid>https://Shin0102.github.io/about/</guid>
-        <description>Experience Python(Django, FastAPI, Flask) Backend Developer
-AWS Devops
-Migration legacy services to microservices
-Launch of new service with full stack
-Interst Full stack Developer(Learning react, flutter)
-Deep dive devops
-Rust</description>
-        
-        <dc:creator>shin alli</dc:creator>
-        <media:content url="https://Shin0102.github.io/images/whoami/avatar.png" medium="image"><media:title type="html">featured image</media:title></media:content>
-        
-        
-        
-        
-        
-      </item>
-      
 
     
   </channel>
