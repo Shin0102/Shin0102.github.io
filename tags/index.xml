@@ -14,11 +14,65 @@
     <managingEditor>shinalli0102@gmail.com (shin alli)</managingEditor>
     <webMaster>shinalli0102@gmail.com (shin alli)</webMaster>
     <copyright>©2025, All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 27 May 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 Aug 2024 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://Shin0102.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
 
+      
+      <item>
+        <title>architecture</title>
+        <link>https://Shin0102.github.io/tags/architecture/</link>
+        <pubDate>Mon, 19 Aug 2024 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        
+        <guid>https://Shin0102.github.io/tags/architecture/</guid>
+        <description></description>
+        
+        <dc:creator>shin alli</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>clean code</title>
+        <link>https://Shin0102.github.io/tags/clean-code/</link>
+        <pubDate>Mon, 19 Aug 2024 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        
+        <guid>https://Shin0102.github.io/tags/clean-code/</guid>
+        <description></description>
+        
+        <dc:creator>shin alli</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>ddd</title>
+        <link>https://Shin0102.github.io/tags/ddd/</link>
+        <pubDate>Mon, 19 Aug 2024 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        
+        <guid>https://Shin0102.github.io/tags/ddd/</guid>
+        <description></description>
+        
+        <dc:creator>shin alli</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>aws</title>
@@ -237,24 +291,6 @@
       </item>
       
       <item>
-        <title>2022 회고</title>
-        <link>https://Shin0102.github.io/tags/2022-%ED%9A%8C%EA%B3%A0/</link>
-        <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/2022-%ED%9A%8C%EA%B3%A0/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
         <title>aws lambda</title>
         <link>https://Shin0102.github.io/tags/aws-lambda/</link>
         <pubDate>Sat, 08 Oct 2022 00:00:00 +0000</pubDate>
@@ -345,24 +381,6 @@
       </item>
       
       <item>
-        <title>clean code</title>
-        <link>https://Shin0102.github.io/tags/clean-code/</link>
-        <pubDate>Sun, 31 Jul 2022 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/clean-code/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
         <title>custom exception hanlder</title>
         <link>https://Shin0102.github.io/tags/custom-exception-hanlder/</link>
         <pubDate>Sun, 31 Jul 2022 00:00:00 +0000</pubDate>
@@ -405,636 +423,6 @@
         <author>shinalli0102@gmail.com (shin alli)</author>
         
         <guid>https://Shin0102.github.io/tags/style-guide/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>AI</title>
-        <link>https://Shin0102.github.io/tags/ai/</link>
-        <pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/ai/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Attention Model</title>
-        <link>https://Shin0102.github.io/tags/attention-model/</link>
-        <pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/attention-model/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Ensemble Learning</title>
-        <link>https://Shin0102.github.io/tags/ensemble-learning/</link>
-        <pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/ensemble-learning/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>GAN</title>
-        <link>https://Shin0102.github.io/tags/gan/</link>
-        <pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/gan/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Grad-CAM</title>
-        <link>https://Shin0102.github.io/tags/grad-cam/</link>
-        <pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/grad-cam/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>RNN</title>
-        <link>https://Shin0102.github.io/tags/rnn/</link>
-        <pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/rnn/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Self-supervised Learning</title>
-        <link>https://Shin0102.github.io/tags/self-supervised-learning/</link>
-        <pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/self-supervised-learning/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>TIL</title>
-        <link>https://Shin0102.github.io/tags/til/</link>
-        <pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/til/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Transfer Learning</title>
-        <link>https://Shin0102.github.io/tags/transfer-learning/</link>
-        <pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/transfer-learning/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>AlexNet</title>
-        <link>https://Shin0102.github.io/tags/alexnet/</link>
-        <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/alexnet/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Autoencoder</title>
-        <link>https://Shin0102.github.io/tags/autoencoder/</link>
-        <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/autoencoder/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>CNN</title>
-        <link>https://Shin0102.github.io/tags/cnn/</link>
-        <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/cnn/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>ResNet</title>
-        <link>https://Shin0102.github.io/tags/resnet/</link>
-        <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/resnet/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Semantic Segmentation</title>
-        <link>https://Shin0102.github.io/tags/semantic-segmentation/</link>
-        <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/semantic-segmentation/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Upsampling</title>
-        <link>https://Shin0102.github.io/tags/upsampling/</link>
-        <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/upsampling/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>VGGNet</title>
-        <link>https://Shin0102.github.io/tags/vggnet/</link>
-        <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/vggnet/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Convolutional Filter</title>
-        <link>https://Shin0102.github.io/tags/convolutional-filter/</link>
-        <pubDate>Tue, 14 Jun 2022 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/convolutional-filter/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Convolutional Neural network</title>
-        <link>https://Shin0102.github.io/tags/convolutional-neural-network/</link>
-        <pubDate>Tue, 14 Jun 2022 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/convolutional-neural-network/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Padding, Stride - Feature map의 크기</title>
-        <link>https://Shin0102.github.io/tags/padding-stride-feature-map%EC%9D%98-%ED%81%AC%EA%B8%B0/</link>
-        <pubDate>Tue, 14 Jun 2022 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/padding-stride-feature-map%EC%9D%98-%ED%81%AC%EA%B8%B0/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Backward Pass</title>
-        <link>https://Shin0102.github.io/tags/backward-pass/</link>
-        <pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/backward-pass/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Batch Normalization</title>
-        <link>https://Shin0102.github.io/tags/batch-normalization/</link>
-        <pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/batch-normalization/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Optimizer</title>
-        <link>https://Shin0102.github.io/tags/optimizer/</link>
-        <pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/optimizer/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Activation Function</title>
-        <link>https://Shin0102.github.io/tags/activation-function/</link>
-        <pubDate>Tue, 31 May 2022 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/activation-function/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Deep Learning</title>
-        <link>https://Shin0102.github.io/tags/deep-learning/</link>
-        <pubDate>Tue, 31 May 2022 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/deep-learning/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Forward Pass</title>
-        <link>https://Shin0102.github.io/tags/forward-pass/</link>
-        <pubDate>Tue, 31 May 2022 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/forward-pass/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Loss Function</title>
-        <link>https://Shin0102.github.io/tags/loss-function/</link>
-        <pubDate>Tue, 31 May 2022 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/loss-function/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Mult-Layer Perception</title>
-        <link>https://Shin0102.github.io/tags/mult-layer-perception/</link>
-        <pubDate>Tue, 31 May 2022 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/mult-layer-perception/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Clustering</title>
-        <link>https://Shin0102.github.io/tags/clustering/</link>
-        <pubDate>Wed, 25 May 2022 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/clustering/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Dimensionallity Reduction</title>
-        <link>https://Shin0102.github.io/tags/dimensionallity-reduction/</link>
-        <pubDate>Wed, 25 May 2022 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/dimensionallity-reduction/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Unsupervised Learning</title>
-        <link>https://Shin0102.github.io/tags/unsupervised-learning/</link>
-        <pubDate>Wed, 25 May 2022 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/unsupervised-learning/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Decision Tree</title>
-        <link>https://Shin0102.github.io/tags/decision-tree/</link>
-        <pubDate>Wed, 18 May 2022 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/decision-tree/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Ensemble</title>
-        <link>https://Shin0102.github.io/tags/ensemble/</link>
-        <pubDate>Wed, 18 May 2022 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/ensemble/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Linear Model</title>
-        <link>https://Shin0102.github.io/tags/linear-model/</link>
-        <pubDate>Wed, 18 May 2022 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/linear-model/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Supervised Learning</title>
-        <link>https://Shin0102.github.io/tags/supervised-learning/</link>
-        <pubDate>Wed, 18 May 2022 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/supervised-learning/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Machine Learning</title>
-        <link>https://Shin0102.github.io/tags/machine-learning/</link>
-        <pubDate>Tue, 17 May 2022 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/machine-learning/</guid>
         <description></description>
         
         <dc:creator>shin alli</dc:creator>
@@ -1341,24 +729,6 @@
         <author>shinalli0102@gmail.com (shin alli)</author>
         
         <guid>https://Shin0102.github.io/tags/role/</guid>
-        <description></description>
-        
-        <dc:creator>shin alli</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>zzo theme</title>
-        <link>https://Shin0102.github.io/tags/zzo-theme/</link>
-        <pubDate>Sun, 06 Dec 2020 00:00:00 +0000</pubDate>
-        <author>shinalli0102@gmail.com (shin alli)</author>
-        
-        <guid>https://Shin0102.github.io/tags/zzo-theme/</guid>
         <description></description>
         
         <dc:creator>shin alli</dc:creator>

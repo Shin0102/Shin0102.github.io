@@ -14,11 +14,49 @@
     <managingEditor>shinalli0102@gmail.com (shin alli)</managingEditor>
     <webMaster>shinalli0102@gmail.com (shin alli)</webMaster>
     <copyright>©2025, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 31 Jul 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 Aug 2024 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://Shin0102.github.io/tags/clean-code/index.xml" rel="self" type="application/rss+xml" />
     
 
+      
+      <item>
+        <title>DDD 기본개념 정리</title>
+        <link>https://Shin0102.github.io/posts/ddd-smmary/</link>
+        <pubDate>Mon, 19 Aug 2024 00:00:00 +0000</pubDate>
+        <author>shinalli0102@gmail.com (shin alli)</author>
+        <atom:modified>Mon, 19 Aug 2024 00:00:00 +0000</atom:modified>
+        <guid>https://Shin0102.github.io/posts/ddd-smmary/</guid>
+        <description>들어가며 모놀리식 서비스가 점점 거대해지면서 비즈니스 로직의 복잡성이 증가하는 경우가 많다. 특히 복잡한 도메인에서는 여러 비즈니스 규칙들이 얽혀있어 코드의 가</description>
+        
+        <dc:creator>shin alli</dc:creator>
+        <media:content url="https://Shin0102.github.ioimages/ddd-summary/ddd.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        <media:content url="https://Shin0102.github.iostatic/images/ddd-summary/ddd.png" medium="image"><media:title type="html">meta image</media:title></media:content>
+        
+          
+            
+              <category>ddd</category>
+            
+          
+            
+              <category>clean code</category>
+            
+          
+            
+              <category>architecture</category>
+            
+          
+        
+        
+          
+            
+              <category>clean code</category>
+            
+          
+        
+        
+      </item>
       
       <item>
         <title>django, 협업하기 좋은코드 만들기</title>
